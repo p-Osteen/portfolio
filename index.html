@@ -5,299 +5,292 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Paul Osteen — Senior Flutter Developer</title>
   <meta name="description" content="Paul Osteen is a Senior Flutter Developer with 5 years of experience shipping 30+ production apps across 12+ industries — multi-app ecosystems, IoT integrations and published Flutter packages.">
-  <meta name="theme-color" content="#0a0b0d">
+  <meta name="theme-color" content="#0b0b0c">
   <meta property="og:title" content="Paul Osteen — Senior Flutter Developer">
   <meta property="og:description" content="30+ production apps, 7 multi-app ecosystems, 6 published Flutter packages.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/images/paul_profile.jpg">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230a0b0d'/><circle cx='50' cy='50' r='16' fill='%23d4ff4f'/></svg>">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230b0b0c'/><circle cx='50' cy='50' r='16' fill='%23f5f5f3'/></svg>">
   <link rel="stylesheet" href="styles/main.css">
-  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
   <a class="skip" href="#work">Skip to content</a>
-  <div class="cursor" aria-hidden="true"><span class="cursor__label"></span></div>
 
-  <!-- NAV -->
   <header class="nav" id="nav">
-    <a href="#top" class="nav__logo" aria-label="Paul Osteen — home">Paul Osteen<i></i></a>
-    <nav class="nav__links" id="nav-links" aria-label="Primary">
-      <a href="#about"><span>01</span>About</a>
-      <a href="#work"><span>02</span>Work</a>
-      <a href="#archive"><span>03</span>Archive</a>
-      <a href="#stack"><span>04</span>Stack</a>
-      <a href="#packages"><span>05</span>Packages</a>
-      <a href="#journey"><span>06</span>Journey</a>
-    </nav>
-    <a href="#contact" class="nav__cta magnetic">Let's talk</a>
-    <button class="nav__burger" id="nav-burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span></button>
+    <div class="nav__inner">
+      <a href="#top" class="nav__logo">Paul Osteen</a>
+      <nav class="nav__links" id="nav-links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#archive">Projects</a>
+        <a href="#stack">Stack</a>
+        <a href="#packages">Packages</a>
+        <a href="#timeline">Timeline</a>
+      </nav>
+      <a href="#contact" class="btn btn--sm nav__cta">Contact</a>
+      <button class="nav__burger" id="nav-burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span></button>
+    </div>
   </header>
 
   <main id="top">
     <!-- HERO -->
-    <section class="hero" id="hero">
-      <canvas class="hero__grid" id="hero-grid" aria-hidden="true"></canvas>
-
-      <div class="hero__top">
-        <p class="pill"><span class="pill__dot"></span>Available for new projects</p>
-        <p class="mono hero__meta">Senior Flutter Developer<br>Diode Info Solutions</p>
+    <section class="hero">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="status rise" style="--i:0"><span class="status__dot"></span>Available for new projects</p>
+          <h1 class="rise" style="--i:1">Paul Osteen</h1>
+          <p class="hero__role rise" style="--i:2">Senior Flutter Developer at Diode Info Solutions</p>
+          <p class="hero__lede rise" style="--i:3">Five years of shipping production Flutter apps — restaurant POS, ride-hailing, hospital suites, IoT wearables and the payment SDKs underneath them. 30+ apps across three countries.</p>
+          <div class="hero__cta rise" style="--i:4">
+            <a class="btn" href="#work">View work</a>
+            <a class="btn btn--ghost" href="#contact">Get in touch</a>
+          </div>
+        </div>
+        <figure class="hero__portrait rise" style="--i:2">
+          <img src="assets/images/paul_profile.jpg" alt="Portrait of Paul Osteen at a desk with a laptop and a Flutter mug" width="1024" height="1024" fetchpriority="high">
+        </figure>
       </div>
 
-      <h1 class="hero__name" aria-label="Paul Osteen">
-        <span class="line"><span class="line__inner">Paul</span></span>
-        <span class="line"><span class="line__inner">Osteen<em>.</em></span></span>
-      </h1>
-
-      <div class="hero__bottom">
-        <p class="hero__lede">
-          Five years shipping <em>production Flutter</em> — restaurant POS, ride-hailing, hospital suites, IoT wearables and the payment SDKs that sit underneath them.
-        </p>
-
-        <figure class="hero__portrait">
-          <img src="assets/images/paul_profile.jpg" alt="Portrait of Paul Osteen at a desk with a laptop and a Flutter mug" width="1024" height="1024">
-        </figure>
-
-        <dl class="stats">
-          <div class="stat"><dt>Apps shipped</dt><dd><b data-count="30">30</b>+</dd></div>
-          <div class="stat"><dt>Ecosystems</dt><dd><b data-count="7">7</b></dd></div>
-          <div class="stat"><dt>Industries</dt><dd><b data-count="12">12</b>+</dd></div>
-          <div class="stat"><dt>Pub packages</dt><dd><b data-count="6">6</b></dd></div>
+      <div class="wrap">
+        <dl class="stats rise" style="--i:5">
+          <div><dt>Apps shipped</dt><dd>30+</dd></div>
+          <div><dt>Multi-app ecosystems</dt><dd>7</dd></div>
+          <div><dt>Industries</dt><dd>12+</dd></div>
+          <div><dt>Published packages</dt><dd>6</dd></div>
         </dl>
       </div>
-
-      <div class="hero__scroll mono" aria-hidden="true"><span>Scroll</span><i></i></div>
     </section>
 
-    <!-- MARQUEE -->
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee__track">
-        <span>Flutter</span><span>Dart</span><span>GetX</span><span>Riverpod</span><span>BLoC</span><span>Firebase</span><span>Clean Architecture</span><span>BLE</span><span>3DS2</span><span>TensorFlow Lite</span><span>Android TV</span><span>Windows Desktop</span>
-        <span>Flutter</span><span>Dart</span><span>GetX</span><span>Riverpod</span><span>BLoC</span><span>Firebase</span><span>Clean Architecture</span><span>BLE</span><span>3DS2</span><span>TensorFlow Lite</span><span>Android TV</span><span>Windows Desktop</span>
-      </div>
-    </div>
-
     <!-- ABOUT -->
-    <section class="section about" id="about">
-      <p class="eyebrow mono"><span>01</span>About</p>
-      <p class="about__statement" id="about-statement">
-        I lead Flutter development at Diode Info Solutions, building cross-platform apps for clients across Bahrain, Morocco and beyond. My speciality is the multi-app ecosystem — interconnected suites of three or four apps that together run a whole business.
-      </p>
+    <section class="section" id="about">
+      <div class="wrap about">
+        <div class="reveal">
+          <p class="label">About</p>
+          <h2>Turning ideas into production-ready apps</h2>
+        </div>
+        <div class="about__text reveal" style="--i:1">
+          <p>I lead Flutter development at Diode Info Solutions, building cross-platform apps for clients across Bahrain, Morocco and beyond. My speciality is the multi-app ecosystem — suites of three or four interconnected apps that together run a whole business.</p>
+          <p>I also publish Flutter packages: hardware printer drivers, payment gateway SDKs and on-device ML tools that other developers use in their own projects.</p>
+        </div>
+      </div>
 
-      <div class="about__cols">
-        <p class="about__note">
-          Beyond apps, I publish Flutter packages — hardware printer drivers, payment gateway SDKs, ML-powered photo analysis — tools other developers use in their own projects.
-        </p>
+      <div class="wrap">
         <ul class="facts">
-          <li><span class="mono">A</span><h3>Enterprise scale</h3><p>Led mobile development for 7 multi-app ecosystems, each with 2–4 interconnected applications.</p></li>
-          <li><span class="mono">B</span><h3>Multi-country</h3><p>Apps serving users in Bahrain, Morocco and other markets, with full localisation support.</p></li>
-          <li><span class="mono">C</span><h3>Hardware &amp; IoT</h3><p>BLE smartwatches, thermal printers, USB cameras and payment terminals integrated into Flutter.</p></li>
-          <li><span class="mono">D</span><h3>Open source</h3><p>Six published packages: printer drivers, payment SDKs and on-device ML.</p></li>
+          <li class="reveal" style="--i:0"><h3>Enterprise scale</h3><p>Led mobile development for 7 multi-app ecosystems, each with 2–4 interconnected applications.</p></li>
+          <li class="reveal" style="--i:1"><h3>Multi-country</h3><p>Apps serving users in Bahrain, Morocco and other markets, with full localisation.</p></li>
+          <li class="reveal" style="--i:2"><h3>Hardware &amp; IoT</h3><p>BLE smartwatches, thermal printers, USB cameras and payment terminals integrated into Flutter.</p></li>
+          <li class="reveal" style="--i:3"><h3>Open source</h3><p>Six published packages: printer drivers, payment SDKs and on-device ML.</p></li>
         </ul>
       </div>
     </section>
 
-    <!-- FEATURED WORK (horizontal pinned on desktop) -->
-    <section class="work" id="work" aria-labelledby="work-title">
-      <div class="work__pin">
-        <div class="work__head">
-          <p class="eyebrow mono"><span>02</span>Selected work</p>
-          <h2 id="work-title">Projects that <em>define</em> the craft.</h2>
-          <p class="work__hint mono"><span id="work-current">01</span> / 04<i class="work__bar"><b id="work-progress"></b></i></p>
+    <!-- SELECTED WORK: native scroll-snap rail -->
+    <section class="section work" id="work" aria-labelledby="work-title">
+      <div class="wrap work__head reveal">
+        <div>
+          <p class="label">Selected work</p>
+          <h2 id="work-title">Four projects in depth</h2>
         </div>
-
-        <div class="work__track" id="work-track">
-
-          <article class="case" data-label="Chicket">
-            <div class="case__media shots shots--phones" data-cap="Kiosk UI · 1080 × 1920">
-              <img src="assets/projects/chicket/home.png" alt="Chicket kiosk home screen" loading="lazy" width="788" height="1400">
-              <img src="assets/projects/chicket/category.png" alt="Chicket kiosk menu with category rail and product grid" loading="lazy" width="788" height="1400">
-              <img src="assets/projects/chicket/cart.png" alt="Chicket kiosk cart screen" loading="lazy" width="788" height="1400">
-            </div>
-            <div class="case__body">
-              <p class="case__meta mono"><span>01</span>Restaurant tech<span class="dot"></span>2 apps · v1.0.0+32</p>
-              <h3>Chicket</h3>
-              <p>Self-ordering kiosk and POS for chicken restaurants, deployed across Bahrain and Morocco. I built a custom AFS payment SDK from scratch to handle Benefit card transactions with AES-256 encryption and 3DS2 authentication.</p>
-              <ul class="tags"><li>Flutter</li><li>GetX</li><li>AFS Payment SDK</li><li>Dio</li><li>i18n</li><li>Thermal printing</li></ul>
-              <ul class="bullets"><li>Self-ordering kiosk UI</li><li>Custom payment gateway</li><li>Multi-country deployment</li><li>Receipt printing (iCOD)</li><li>Cart &amp; order management</li><li>Real-time order tracking</li></ul>
-            </div>
-          </article>
-
-          <article class="case" data-label="Lime POS">
-            <div class="case__media shots shots--stack" data-cap="Manager dashboard · dark theme">
-              <img src="assets/projects/lime-pos/today.png" alt="Lime POS manager dashboard showing today's net sales, payment mix and top items" loading="lazy" width="1440" height="1204">
-              <img src="assets/projects/lime-pos/sales.png" alt="Lime POS sales summary report" loading="lazy" width="1440" height="1024">
-            </div>
-            <div class="case__body">
-              <p class="case__meta mono"><span>02</span>POS suite<span class="dot"></span>3 apps · In development</p>
-              <h3>Lime POS Suite</h3>
-              <p>A complete restaurant management ecosystem — cashier POS, kitchen display and an owner dashboard. Tracks revenue, orders, outlet comparison and employee performance across multiple locations in Bahrain.</p>
-              <ul class="tags"><li>Flutter</li><li>Windows desktop</li><li>REST APIs</li><li>Charts</li><li>Retrofit</li><li>Saved views</li></ul>
-              <ul class="bullets"><li>Multi-outlet analytics</li><li>Revenue dashboards</li><li>Order management</li><li>Windows desktop app</li><li>Outlet comparison</li><li>Employee management</li></ul>
-            </div>
-          </article>
-
-          <article class="case" data-label="Wafaa+">
-            <div class="case__media shots shots--phones" data-cap="Customer app · 393 × 852">
-              <img src="assets/projects/wafaa/home.png" alt="Wafaa+ home screen with point balance, wallet balance and loyalty cards" loading="lazy" width="786" height="1704">
-              <img src="assets/projects/wafaa/wallet.png" alt="Wafaa+ wallet balance screen" loading="lazy" width="786" height="1704">
-              <img src="assets/projects/wafaa/offer.png" alt="Wafaa+ offer detail screen" loading="lazy" width="786" height="1704">
-            </div>
-            <div class="case__body">
-              <p class="case__meta mono"><span>03</span>Loyalty &amp; fintech<span class="dot"></span>2 apps · v2.5.2 · 41 builds</p>
-              <h3>Wafaa+ Loyalty</h3>
-              <p>The most feature-rich app in the portfolio — 41 production builds. A customer app with QR scanning, digital wallet, in-app chat, biometric auth, referrals and tiered membership, plus a merchant management app.</p>
-              <ul class="tags"><li>Flutter</li><li>GetX</li><li>QR scanner</li><li>Deep linking</li><li>Biometrics</li><li>WebView</li></ul>
-              <ul class="bullets"><li>Digital wallet &amp; payments</li><li>QR loyalty scanning</li><li>Tiered membership</li><li>In-app chat &amp; support</li><li>Referral &amp; earn program</li><li>Merchant dashboard app</li></ul>
-            </div>
-          </article>
-
-          <article class="case" data-label="Atherminds">
-            <div class="case__media shots shots--tall" data-cap="Brand &amp; campaign emailer design">
-              <img src="assets/projects/atherminds/pitch.png" alt="AtherMinds Ads campaign emailer design with brand header, benefits and coverage sections" loading="lazy" width="784" height="1520">
-            </div>
-            <div class="case__body">
-              <p class="case__meta mono"><span>04</span>Digital signage<span class="dot"></span>4 apps · v1.2.0+25</p>
-              <h3>Atherminds Ads</h3>
-              <p>A four-app smart-TV advertising ecosystem: an ads player for TV screens, an agent app for field technicians, a client dashboard for campaigns, and a device activation app. Controls signage networks across multiple locations.</p>
-              <ul class="tags"><li>Flutter</li><li>Riverpod</li><li>Android TV</li><li>Video playback</li><li>Device activation</li><li>REST APIs</li></ul>
-              <ul class="bullets"><li>Smart TV ad playback</li><li>Campaign scheduling</li><li>Device fleet management</li><li>Agent field scanning</li><li>Analytics dashboard</li><li>Multi-location control</li></ul>
-            </div>
-          </article>
-
+        <div class="rail-controls" role="group" aria-label="Browse projects">
+          <button class="icon-btn" id="rail-prev" type="button" aria-label="Previous project" disabled>
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <button class="icon-btn" id="rail-next" type="button" aria-label="Next project">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+          </button>
         </div>
       </div>
+
+      <div class="rail" id="rail" tabindex="0" role="region" aria-label="Selected projects, scrollable">
+
+        <article class="case">
+          <div class="media shots shots--phones" data-cap="Kiosk UI · 1080 × 1920">
+            <img src="assets/projects/chicket/home.png" alt="Chicket kiosk home screen" loading="lazy" decoding="async" width="788" height="1400" draggable="false">
+            <img src="assets/projects/chicket/category.png" alt="Chicket kiosk menu with category rail and product grid" loading="lazy" decoding="async" width="788" height="1400" draggable="false">
+            <img src="assets/projects/chicket/cart.png" alt="Chicket kiosk cart screen" loading="lazy" decoding="async" width="788" height="1400" draggable="false">
+          </div>
+          <div class="case__body">
+            <p class="case__meta">Restaurant tech · 2 apps · v1.0.0+32</p>
+            <h3>Chicket</h3>
+            <p>Self-ordering kiosk and POS for chicken restaurants, deployed across Bahrain and Morocco. I built a custom AFS payment SDK from scratch to handle Benefit card transactions with AES-256 encryption and 3DS2 authentication.</p>
+            <ul class="tags"><li>Flutter</li><li>GetX</li><li>AFS Payment SDK</li><li>Dio</li><li>i18n</li><li>Thermal printing</li></ul>
+            <ul class="bullets"><li>Self-ordering kiosk UI</li><li>Custom payment gateway</li><li>Multi-country deployment</li><li>Receipt printing (iCOD)</li><li>Cart &amp; order management</li><li>Real-time order tracking</li></ul>
+          </div>
+        </article>
+
+        <article class="case">
+          <div class="media shots shots--stack" data-cap="Manager dashboard · dark theme">
+            <img src="assets/projects/lime-pos/today.png" alt="Lime POS manager dashboard showing today's net sales, payment mix and top items" loading="lazy" decoding="async" width="1440" height="1204" draggable="false">
+            <img src="assets/projects/lime-pos/sales.png" alt="Lime POS sales summary report" loading="lazy" decoding="async" width="1440" height="1024" draggable="false">
+          </div>
+          <div class="case__body">
+            <p class="case__meta">POS suite · 3 apps · In development</p>
+            <h3>Lime POS Suite</h3>
+            <p>A complete restaurant management ecosystem — cashier POS, kitchen display and an owner dashboard. Tracks revenue, orders, outlet comparison and employee performance across multiple locations in Bahrain.</p>
+            <ul class="tags"><li>Flutter</li><li>Windows desktop</li><li>REST APIs</li><li>Charts</li><li>Retrofit</li><li>Saved views</li></ul>
+            <ul class="bullets"><li>Multi-outlet analytics</li><li>Revenue dashboards</li><li>Order management</li><li>Windows desktop app</li><li>Outlet comparison</li><li>Employee management</li></ul>
+          </div>
+        </article>
+
+        <article class="case">
+          <div class="media shots shots--phones shots--slim" data-cap="Customer app · 393 × 852">
+            <img src="assets/projects/wafaa/home.png" alt="Wafaa+ home screen with point balance, wallet balance and loyalty cards" loading="lazy" decoding="async" width="786" height="1704" draggable="false">
+            <img src="assets/projects/wafaa/wallet.png" alt="Wafaa+ wallet balance screen" loading="lazy" decoding="async" width="786" height="1704" draggable="false">
+            <img src="assets/projects/wafaa/offer.png" alt="Wafaa+ offer detail screen" loading="lazy" decoding="async" width="786" height="1704" draggable="false">
+          </div>
+          <div class="case__body">
+            <p class="case__meta">Loyalty &amp; fintech · 2 apps · v2.5.2 · 41 builds</p>
+            <h3>Wafaa+ Loyalty</h3>
+            <p>The most feature-rich app in the portfolio — 41 production builds. A customer app with QR scanning, digital wallet, in-app chat, biometric auth, referrals and tiered membership, plus a merchant management app.</p>
+            <ul class="tags"><li>Flutter</li><li>GetX</li><li>QR scanner</li><li>Deep linking</li><li>Biometrics</li><li>WebView</li></ul>
+            <ul class="bullets"><li>Digital wallet &amp; payments</li><li>QR loyalty scanning</li><li>Tiered membership</li><li>In-app chat &amp; support</li><li>Referral &amp; earn program</li><li>Merchant dashboard app</li></ul>
+          </div>
+        </article>
+
+        <article class="case">
+          <div class="media shots shots--tall" data-cap="Brand &amp; campaign emailer design">
+            <img src="assets/projects/atherminds/pitch.png" alt="AtherMinds Ads campaign emailer design with brand header, benefits and coverage sections" loading="lazy" decoding="async" width="784" height="1520" draggable="false">
+          </div>
+          <div class="case__body">
+            <p class="case__meta">Digital signage · 4 apps · v1.2.0+25</p>
+            <h3>Atherminds Ads</h3>
+            <p>A four-app smart-TV advertising ecosystem: an ads player for TV screens, an agent app for field technicians, a client dashboard for campaigns, and a device activation app. Controls signage networks across multiple locations.</p>
+            <ul class="tags"><li>Flutter</li><li>Riverpod</li><li>Android TV</li><li>Video playback</li><li>Device activation</li><li>REST APIs</li></ul>
+            <ul class="bullets"><li>Smart TV ad playback</li><li>Campaign scheduling</li><li>Device fleet management</li><li>Agent field scanning</li><li>Analytics dashboard</li><li>Multi-location control</li></ul>
+          </div>
+        </article>
+
+      </div>
+      <div class="wrap"><div class="dots" id="rail-dots" aria-hidden="true"><i></i><i></i><i></i><i></i></div></div>
     </section>
 
     <!-- ARCHIVE -->
-    <section class="section archive" id="archive" aria-labelledby="archive-title">
-      <p class="eyebrow mono"><span>03</span>Archive</p>
-      <h2 id="archive-title">Everything <em>else</em> I've shipped.</h2>
-
-      <div class="filters" id="filters" role="group" aria-label="Filter projects by industry"></div>
-
-      <ol class="rows" id="rows">
-        <li class="rows__empty"><noscript>Enable JavaScript to browse the full project archive.</noscript></li>
-      </ol>
+    <section class="section" id="archive" aria-labelledby="archive-title">
+      <div class="wrap">
+        <div class="reveal">
+          <p class="label">Projects</p>
+          <h2 id="archive-title">Everything I've shipped</h2>
+        </div>
+        <div class="filters" id="filters" role="group" aria-label="Filter projects by industry"></div>
+        <ol class="rows" id="rows">
+          <li class="rows__empty"><noscript>Enable JavaScript to browse the full project archive.</noscript></li>
+        </ol>
+      </div>
     </section>
 
     <!-- STACK -->
-    <section class="section stack" id="stack" aria-labelledby="stack-title">
-      <p class="eyebrow mono"><span>04</span>Stack</p>
-      <h2 id="stack-title">Tools refined across <em>30+</em> production apps.</h2>
-
-      <div class="stack__grid">
-        <div class="stack__col"><h3 class="mono">Core</h3><ul><li>Flutter</li><li>Dart</li><li>Material Design</li><li>Cupertino</li><li>Flutter Web</li><li>Android TV</li></ul></div>
-        <div class="stack__col"><h3 class="mono">State</h3><ul><li>GetX</li><li>Riverpod</li><li>Provider</li><li>BLoC</li></ul></div>
-        <div class="stack__col"><h3 class="mono">Backend &amp; APIs</h3><ul><li>REST (Dio)</li><li>Retrofit</li><li>Firebase</li><li>Odoo ERP</li><li>WebSockets</li><li>Pusher</li></ul></div>
-        <div class="stack__col"><h3 class="mono">Payments</h3><ul><li>AFS Benefit Gateway</li><li>Custom payment SDKs</li><li>AES-256 encryption</li><li>3DS2</li></ul></div>
-        <div class="stack__col"><h3 class="mono">Maps &amp; location</h3><ul><li>Google Maps</li><li>OpenStreetMap</li><li>Geolocator</li><li>Real-time tracking</li></ul></div>
-        <div class="stack__col"><h3 class="mono">Hardware &amp; IoT</h3><ul><li>BLE (flutter_blue_plus)</li><li>Thermal printers (Nyx)</li><li>USB cameras (UVC)</li><li>Smartwatches (E900)</li><li>Platform channels</li></ul></div>
-        <div class="stack__col"><h3 class="mono">ML &amp; AI</h3><ul><li>TensorFlow Lite</li><li>Face detection</li><li>Content classification</li></ul></div>
-        <div class="stack__col"><h3 class="mono">Architecture &amp; DevOps</h3><ul><li>Clean Architecture</li><li>Repository pattern</li><li>Feature-first</li><li>FVM</li><li>FlutterGen</li><li>Firebase (Auth, FCM, Firestore)</li></ul></div>
+    <section class="section" id="stack" aria-labelledby="stack-title">
+      <div class="wrap">
+        <div class="reveal">
+          <p class="label">Stack</p>
+          <h2 id="stack-title">Tools I work with</h2>
+        </div>
+        <div class="stack">
+          <div class="reveal"><h3>Core</h3><ul><li>Flutter</li><li>Dart</li><li>Material Design</li><li>Cupertino</li><li>Flutter Web</li><li>Android TV</li></ul></div>
+          <div class="reveal"><h3>State</h3><ul><li>GetX</li><li>Riverpod</li><li>Provider</li><li>BLoC</li></ul></div>
+          <div class="reveal"><h3>Backend &amp; APIs</h3><ul><li>REST (Dio)</li><li>Retrofit</li><li>Firebase</li><li>Odoo ERP</li><li>WebSockets</li><li>Pusher</li></ul></div>
+          <div class="reveal"><h3>Payments</h3><ul><li>AFS Benefit Gateway</li><li>Custom payment SDKs</li><li>AES-256 encryption</li><li>3DS2</li></ul></div>
+          <div class="reveal"><h3>Maps &amp; location</h3><ul><li>Google Maps</li><li>OpenStreetMap</li><li>Geolocator</li><li>Real-time tracking</li></ul></div>
+          <div class="reveal"><h3>Hardware &amp; IoT</h3><ul><li>BLE (flutter_blue_plus)</li><li>Thermal printers (Nyx)</li><li>USB cameras (UVC)</li><li>Smartwatches (E900)</li><li>Platform channels</li></ul></div>
+          <div class="reveal"><h3>ML &amp; AI</h3><ul><li>TensorFlow Lite</li><li>Face detection</li><li>Content classification</li></ul></div>
+          <div class="reveal"><h3>Architecture &amp; DevOps</h3><ul><li>Clean Architecture</li><li>Repository pattern</li><li>Feature-first</li><li>FVM</li><li>FlutterGen</li><li>Firebase (Auth, FCM, Firestore)</li></ul></div>
+        </div>
       </div>
     </section>
 
     <!-- PACKAGES -->
-    <section class="section packages" id="packages" aria-labelledby="packages-title">
-      <p class="eyebrow mono"><span>05</span>Open source</p>
-      <h2 id="packages-title">Published <em>Flutter packages.</em></h2>
-      <p class="lede">Tools I built and released for the community — from hardware drivers to payment SDKs. Click a command to copy it.</p>
+    <section class="section" id="packages" aria-labelledby="packages-title">
+      <div class="wrap">
+        <div class="reveal">
+          <p class="label">Open source</p>
+          <h2 id="packages-title">Published Flutter packages</h2>
+          <p class="lede">Tools I built and released for the community. Click a command to copy it.</p>
+        </div>
 
-      <div class="pkgs">
-        <article class="pkg">
-          <header><h3>nyx_printer_v2</h3><span class="mono">v1.2.2</span></header>
-          <p>Flutter plugin for Nyx printers (NB55, T2 Pro, T2 Plus) — print text, barcodes, QR codes and images via Android AIDL service binding.</p>
-          <button class="cmd mono" data-cmd="flutter pub add nyx_printer_v2"><span>$</span> flutter pub add nyx_printer_v2<em>Copy</em></button>
-          <ul class="tags"><li>Text, barcode, QR</li><li>PNG printing</li><li>Android 14+</li></ul>
-        </article>
-        <article class="pkg">
-          <header><h3>afs_gateway</h3><span class="mono">v1.0.0</span></header>
-          <p>AFS Benefit Payment Gateway SDK — AES-256-CBC encryption, automated 3DS2 authentication, JS bridge result interception and deep-link support.</p>
-          <button class="cmd mono" data-cmd="flutter pub add afs_gateway"><span>$</span> flutter pub add afs_gateway<em>Copy</em></button>
-          <ul class="tags"><li>AES-256-CBC</li><li>3DS2</li><li>JS bridge</li><li>Sandbox cards</li></ul>
-        </article>
-        <article class="pkg">
-          <header><h3>photo_analyzer</h3><span class="mono">v0.2.4</span></header>
-          <p>ML-powered photo analysis — face detection, gender estimation and NSFW classification with TensorFlow Lite on-device inference.</p>
-          <button class="cmd mono" data-cmd="flutter pub add photo_analyzer"><span>$</span> flutter pub add photo_analyzer<em>Copy</em></button>
-          <ul class="tags"><li>Face detection</li><li>Gender estimation</li><li>NSFW classification</li></ul>
-        </article>
-        <article class="pkg">
-          <header><h3>neurya_sdk</h3><span class="mono">v0.0.1</span></header>
-          <p>Plug-and-play SDK for E900-series smartwatches. Health tracking, device management and data sync over BLE.</p>
-          <button class="cmd mono" data-cmd="flutter pub add neurya_sdk"><span>$</span> flutter pub add neurya_sdk<em>Copy</em></button>
-          <ul class="tags"><li>BLE</li><li>Health sync</li><li>Device management</li><li>Calendar UI</li></ul>
-        </article>
-        <article class="pkg">
-          <header><h3>flutter_uvc_camera</h3><span class="mono">v0.2.0</span></header>
-          <p>USB Video Class camera support for Android — lets Flutter apps use external USB cameras via platform channels.</p>
-          <button class="cmd mono" data-cmd="flutter pub add flutter_uvc_camera"><span>$</span> flutter pub add flutter_uvc_camera<em>Copy</em></button>
-          <ul class="tags"><li>USB cameras</li><li>Platform channels</li><li>Android native</li></ul>
-        </article>
-        <article class="pkg">
-          <header><h3>benefit_pg_flutter</h3><span class="mono">v0.0.1</span></header>
-          <p>Benefit payment gateway plugin for Flutter — secure card payment processing for Bahrain's Benefit network.</p>
-          <button class="cmd mono" data-cmd="flutter pub add benefit_pg_flutter"><span>$</span> flutter pub add benefit_pg_flutter<em>Copy</em></button>
-          <ul class="tags"><li>Benefit network</li><li>Card payments</li><li>Bahrain</li></ul>
-        </article>
+        <div class="pkgs">
+          <article class="pkg reveal" style="--i:0">
+            <header><h3>nyx_printer_v2</h3><span>v1.2.2</span></header>
+            <p>Flutter plugin for Nyx printers (NB55, T2 Pro, T2 Plus) — print text, barcodes, QR codes and images via Android AIDL service binding.</p>
+            <button class="cmd" type="button" data-cmd="flutter pub add nyx_printer_v2"><code>flutter pub add nyx_printer_v2</code><em>Copy</em></button>
+            <ul class="tags"><li>Text, barcode, QR</li><li>PNG printing</li><li>Android 14+</li></ul>
+          </article>
+          <article class="pkg reveal" style="--i:1">
+            <header><h3>afs_gateway</h3><span>v1.0.0</span></header>
+            <p>AFS Benefit Payment Gateway SDK — AES-256-CBC encryption, automated 3DS2 authentication, JS bridge result interception and deep-link support.</p>
+            <button class="cmd" type="button" data-cmd="flutter pub add afs_gateway"><code>flutter pub add afs_gateway</code><em>Copy</em></button>
+            <ul class="tags"><li>AES-256-CBC</li><li>3DS2</li><li>JS bridge</li><li>Sandbox cards</li></ul>
+          </article>
+          <article class="pkg reveal" style="--i:2">
+            <header><h3>photo_analyzer</h3><span>v0.2.4</span></header>
+            <p>ML-powered photo analysis — face detection, gender estimation and NSFW classification with TensorFlow Lite on-device inference.</p>
+            <button class="cmd" type="button" data-cmd="flutter pub add photo_analyzer"><code>flutter pub add photo_analyzer</code><em>Copy</em></button>
+            <ul class="tags"><li>Face detection</li><li>Gender estimation</li><li>NSFW classification</li></ul>
+          </article>
+          <article class="pkg reveal" style="--i:0">
+            <header><h3>neurya_sdk</h3><span>v0.0.1</span></header>
+            <p>Plug-and-play SDK for E900-series smartwatches. Health tracking, device management and data sync over BLE.</p>
+            <button class="cmd" type="button" data-cmd="flutter pub add neurya_sdk"><code>flutter pub add neurya_sdk</code><em>Copy</em></button>
+            <ul class="tags"><li>BLE</li><li>Health sync</li><li>Device management</li><li>Calendar UI</li></ul>
+          </article>
+          <article class="pkg reveal" style="--i:1">
+            <header><h3>flutter_uvc_camera</h3><span>v0.2.0</span></header>
+            <p>USB Video Class camera support for Android — lets Flutter apps use external USB cameras via platform channels.</p>
+            <button class="cmd" type="button" data-cmd="flutter pub add flutter_uvc_camera"><code>flutter pub add flutter_uvc_camera</code><em>Copy</em></button>
+            <ul class="tags"><li>USB cameras</li><li>Platform channels</li><li>Android native</li></ul>
+          </article>
+          <article class="pkg reveal" style="--i:2">
+            <header><h3>benefit_pg_flutter</h3><span>v0.0.1</span></header>
+            <p>Benefit payment gateway plugin for Flutter — secure card payment processing for Bahrain's Benefit network.</p>
+            <button class="cmd" type="button" data-cmd="flutter pub add benefit_pg_flutter"><code>flutter pub add benefit_pg_flutter</code><em>Copy</em></button>
+            <ul class="tags"><li>Benefit network</li><li>Card payments</li><li>Bahrain</li></ul>
+          </article>
+        </div>
       </div>
     </section>
 
-    <!-- JOURNEY -->
-    <section class="section journey" id="journey" aria-labelledby="journey-title">
-      <p class="eyebrow mono"><span>06</span>Journey</p>
-      <h2 id="journey-title">How I got <em>here.</em></h2>
-
-      <ol class="steps">
-        <li class="step">
-          <p class="step__year">2021</p>
-          <div><h3>First Flutter projects</h3><p>Began professional Flutter development. Early work included e-commerce apps, games (Ludo, Snake &amp; Ladder) and HRMS systems — the fundamentals of cross-platform mobile.</p></div>
-        </li>
-        <li class="step">
-          <p class="step__year">2022</p>
-          <div><h3>Multi-app ecosystems</h3><p>Safar Cab (rider + driver), Exodus (3-app trucking platform) and Hospivio (3-app hospital suite). Learned to architect interconnected systems that share logic and APIs.</p></div>
-        </li>
-        <li class="step">
-          <p class="step__year">2023</p>
-          <div><h3>Payment SDKs &amp; restaurant tech</h3><p>Went deep on restaurant POS with Chicket and Lime POS. Built the AFS Benefit gateway SDK from scratch — AES-256, 3DS2 and JS bridge interception. Wafaa+ hit its stride.</p></div>
-        </li>
-        <li class="step">
-          <p class="step__year">2024</p>
-          <div><h3>IoT &amp; hardware</h3><p>Extended Flutter into hardware: the Neurya smartwatch SDK over BLE, the Nyx thermal-printer plugin and a UVC camera plugin. Published packages to the Flutter community.</p></div>
-        </li>
-        <li class="step">
-          <p class="step__year">2025<br><span>— now</span></p>
-          <div><h3>Full-stack Flutter</h3><p>Leading Atherminds (4-app smart-TV ad platform), Norda Kitchen (cloud kitchen with health API) and Lime POS Management (Windows desktop). ML-powered packages with TFLite. 30+ apps shipped and counting.</p></div>
-        </li>
-      </ol>
+    <!-- TIMELINE -->
+    <section class="section" id="timeline" aria-labelledby="timeline-title">
+      <div class="wrap">
+        <div class="reveal">
+          <p class="label">Timeline</p>
+          <h2 id="timeline-title">How I got here</h2>
+        </div>
+        <ol class="steps">
+          <li class="reveal"><p class="step__year">2021</p><div><h3>First Flutter projects</h3><p>Began professional Flutter development. Early work included e-commerce apps, games (Ludo, Snake &amp; Ladder) and HRMS systems — the fundamentals of cross-platform mobile.</p></div></li>
+          <li class="reveal"><p class="step__year">2022</p><div><h3>Multi-app ecosystems</h3><p>Safar Cab (rider + driver), Exodus (3-app trucking platform) and Hospivio (3-app hospital suite). Learned to architect interconnected systems that share logic and APIs.</p></div></li>
+          <li class="reveal"><p class="step__year">2023</p><div><h3>Payment SDKs &amp; restaurant tech</h3><p>Went deep on restaurant POS with Chicket and Lime POS. Built the AFS Benefit gateway SDK from scratch — AES-256, 3DS2 and JS bridge interception. Wafaa+ hit its stride.</p></div></li>
+          <li class="reveal"><p class="step__year">2024</p><div><h3>IoT &amp; hardware</h3><p>Extended Flutter into hardware: the Neurya smartwatch SDK over BLE, the Nyx thermal-printer plugin and a UVC camera plugin. Published packages to the Flutter community.</p></div></li>
+          <li class="reveal"><p class="step__year">2025 – now</p><div><h3>Full-stack Flutter</h3><p>Leading Atherminds (4-app smart-TV ad platform), Norda Kitchen (cloud kitchen with health API) and Lime POS Management (Windows desktop). ML-powered packages with TFLite. 30+ apps shipped and counting.</p></div></li>
+        </ol>
+      </div>
     </section>
 
     <!-- CONTACT -->
-    <section class="contact" id="contact" aria-labelledby="contact-title">
-      <p class="eyebrow mono"><span>07</span>Contact</p>
-      <h2 class="contact__title" id="contact-title">Let's build<br>something <em>incredible.</em></h2>
-      <p class="lede">A complete mobile ecosystem, a Flutter SDK, or a technical lead for your mobile team — I'm here to turn the idea into production software.</p>
-      <a class="contact__mail magnetic" href="mailto:paulopoyyayil@gmail.com">paulopoyyayil@gmail.com<svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M8 5h11v11"/></svg></a>
-      <ul class="socials">
-        <li><a href="https://github.com/p-Osteen" target="_blank" rel="noopener">GitHub<span>↗</span></a></li>
-        <li><a href="https://www.linkedin.com/in/posteen" target="_blank" rel="noopener">LinkedIn<span>↗</span></a></li>
-      </ul>
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <div class="contact__card reveal">
+          <p class="label">Contact</p>
+          <h2 id="contact-title">Let's work together</h2>
+          <p class="lede">A complete mobile ecosystem, a Flutter SDK, or a technical lead for your mobile team — I can help turn the idea into production software.</p>
+          <div class="contact__actions">
+            <a class="btn" href="mailto:paulopoyyayil@gmail.com">paulopoyyayil@gmail.com</a>
+            <a class="btn btn--ghost" href="https://github.com/p-Osteen" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn btn--ghost" href="https://www.linkedin.com/in/posteen" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p class="mono">© 2026 Paul Osteen</p>
-    <p class="mono">Senior Flutter Developer</p>
-    <a class="mono" href="#top">Back to top ↑</a>
+    <div class="wrap footer__inner">
+      <p>© 2026 Paul Osteen</p>
+      <a href="#top">Back to top</a>
+    </div>
   </footer>
 
-  <div class="toast mono" id="toast" role="status" aria-live="polite"></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="scripts/data.js"></script>
   <script src="scripts/main.js"></script>
 </body>
