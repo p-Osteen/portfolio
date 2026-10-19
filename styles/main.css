@@ -178,7 +178,6 @@ h1 { font-size: clamp(2.25rem, 1.5rem + 3.4vw, 3.75rem); line-height: 1.05; font
 
 /* media sized with container-query units, so it scales with the card at any width */
 .media { position: relative; container-type: inline-size; aspect-ratio: 5 / 4; background: linear-gradient(160deg, #1c2030 0%, var(--surface) 60%); overflow: hidden; }
-.media::after { content: attr(data-cap); position: absolute; left: 16px; bottom: 12px; font-size: 0.75rem; color: var(--dim); pointer-events: none; }
 .media img { position: absolute; border-radius: 8px; box-shadow: 0 20px 48px -16px rgba(0, 0, 0, 0.8), 0 0 0 1px var(--line-2); -webkit-user-drag: none; user-select: none; }
 .shots--phones img {
   --w: 32cqw;
@@ -186,12 +185,14 @@ h1 { font-size: clamp(2.25rem, 1.5rem + 3.4vw, 3.75rem); line-height: 1.05; font
   transform: translate(calc(-50% + var(--dx, 0cqw)), -50%) rotate(var(--r, 0deg)) scale(var(--s, 1));
 }
 .shots--phones.shots--slim img { --w: 26cqw; }
+.shots--phones.shots--duo img { --w: 34cqw; --s: 1; }
+.shots--phones.shots--duo img:nth-child(1) { --dx: calc(var(--w) * -0.56); --r: -2deg; z-index: 1; }
+.shots--phones.shots--duo img:nth-child(2) { --dx: calc(var(--w) * 0.56); --r: 2deg; z-index: 2; }
 .shots--phones img:nth-child(1) { --dx: calc(var(--w) * -0.84); --s: 0.92; --r: -3deg; z-index: 1; }
 .shots--phones img:nth-child(2) { --dx: 0cqw; z-index: 3; }
 .shots--phones img:nth-child(3) { --dx: calc(var(--w) * 0.84); --s: 0.92; --r: 3deg; z-index: 1; }
 .shots--stack img:nth-child(1) { left: 5cqw; top: 7cqw; width: 76cqw; height: auto; }
 .shots--stack img:nth-child(2) { right: 4cqw; bottom: 9cqw; width: 52cqw; height: auto; }
-.shots--tall img { left: 50%; top: 47%; height: 64cqw; width: auto; transform: translate(-50%, -50%); }
 
 .dots { display: flex; gap: 6px; justify-content: center; margin-top: 20px; }
 .dots i { width: 6px; height: 6px; border-radius: 3px; background: var(--line-2); transition: width 0.3s var(--ease), background-color 0.3s; }
