@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paul Osteen — Senior Flutter Developer</title>
+  <meta name="description" content="Portfolio of Paul Osteen, a Senior Flutter Developer with 5 years of experience building 30+ production apps across 12+ industries. Specializing in multi-app ecosystems, IoT integration, and published Flutter packages.">
+  <meta name="keywords" content="Flutter Developer, Mobile App Developer, Dart, iOS, Android, Portfolio, Paul Osteen">
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <nav class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#" class="nav__logo">paul<span>.dev</span></a>
+      <div class="nav__links" id="nav-links">
+        <a href="#about" class="nav__link">About</a>
+        <a href="#stack" class="nav__link">Stack</a>
+        <a href="#featured" class="nav__link">Projects</a>
+        <a href="#packages" class="nav__link">Packages</a>
+        <a href="#timeline" class="nav__link">Journey</a>
+        <a href="#contact" class="nav__cta">Get in Touch</a>
+      </div>
+      <button class="nav__hamburger" id="nav-hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav__overlay" id="nav-overlay"></div>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="hero">
+    <!-- Animated gradient orbs -->
+    <div class="hero__gradient-orb hero__gradient-orb--1"></div>
+    <div class="hero__gradient-orb hero__gradient-orb--2"></div>
+    <div class="hero__gradient-orb hero__gradient-orb--3"></div>
+
+    <!-- Particle canvas -->
+    <canvas class="hero__canvas" id="hero-canvas"></canvas>
+
+    <div class="container hero__content">
+      <div class="hero__badge">
+        <span class="dot"></span>
+        Available for new projects
+      </div>
+
+      <h1 class="hero__name">
+        Paul Osteen<br>
+        <span class="gradient-text">Flutter Developer</span>
+      </h1>
+
+      <p class="hero__title">
+        <strong>5 years</strong> of crafting production Flutter apps — from restaurant POS systems to ride-hailing platforms, IoT smartwatch SDKs to loyalty ecosystems. Building the software that powers real businesses across <strong>3 countries</strong>.
+      </p>
+
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <div class="hero__stat-value" data-count="30" data-suffix="+">0+</div>
+          <div class="hero__stat-label">Apps Built</div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-value" data-count="6" data-suffix="">0</div>
+          <div class="hero__stat-label">Published Packages</div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-value" data-count="12" data-suffix="+">0+</div>
+          <div class="hero__stat-label">Industries</div>
+        </div>
+        <div class="hero__stat">
+          <div class="hero__stat-value" data-count="7" data-suffix="">0</div>
+          <div class="hero__stat-label">Multi-App Ecosystems</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT ==================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="reveal">
+        <span class="section__label">About</span>
+        <h2 class="section__title">Turning ideas into<br><span class="gradient-text">production-ready apps</span></h2>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__image-wrapper reveal reveal-delay-1">
+          <div class="about__image-frame">
+            <img src="assets/images/paul_profile.jpg" alt="Paul Osteen — Senior Flutter Developer" class="about__image" loading="lazy">
+          </div>
+          <div class="about__image-decoration"></div>
+        </div>
+
+        <div class="about__text reveal reveal-delay-2">
+          <p>
+            I'm a Senior Flutter Developer at <strong style="color:var(--accent-blue)">Diode Info Solutions</strong>, where I lead the development of cross-platform mobile applications for clients across Bahrain, Morocco, and beyond.
+          </p>
+          <p>
+            Over 5 years, I've shipped 30+ production applications spanning restaurant POS systems, ride-hailing platforms, hospital management suites, loyalty ecosystems, digital signage networks, and IoT wearable integrations. I specialize in building <strong style="color:var(--text-primary)">multi-app ecosystems</strong> — interconnected suites of 3–4 apps that work together to power complete business operations.
+          </p>
+          <p>
+            Beyond apps, I create and publish Flutter packages — from hardware printer drivers to payment gateway SDKs — contributing tools that other developers use in their own projects.
+          </p>
+        </div>
+      </div>
+
+      <div class="about__highlights">
+        <div class="about__highlight-card reveal reveal-delay-1">
+          <div class="about__highlight-icon">🏢</div>
+          <div class="about__highlight-title">Enterprise Scale</div>
+          <div class="about__highlight-desc">Led mobile development for 7 multi-app ecosystems, each with 2–4 interconnected applications.</div>
+        </div>
+        <div class="about__highlight-card reveal reveal-delay-2">
+          <div class="about__highlight-icon">🌍</div>
+          <div class="about__highlight-title">Multi-Country Deployments</div>
+          <div class="about__highlight-desc">Apps deployed and serving users in Bahrain, Morocco, and other markets with localization support.</div>
+        </div>
+        <div class="about__highlight-card reveal reveal-delay-3">
+          <div class="about__highlight-icon">🔌</div>
+          <div class="about__highlight-title">Hardware & IoT</div>
+          <div class="about__highlight-desc">Integrated BLE smartwatches, thermal printers, USB cameras, and payment terminals into Flutter apps.</div>
+        </div>
+        <div class="about__highlight-card reveal reveal-delay-4">
+          <div class="about__highlight-icon">📦</div>
+          <div class="about__highlight-title">Open Source</div>
+          <div class="about__highlight-desc">Published 6 Flutter packages including printer drivers, payment SDKs, and ML-powered photo analysis.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TECH STACK ==================== -->
+  <section class="section stack" id="stack">
+    <div class="container">
+      <div class="reveal">
+        <span class="section__label">Tech Stack</span>
+        <h2 class="section__title">Technologies I <span class="gradient-text">work with</span></h2>
+        <p class="section__subtitle">A toolkit refined across 30+ production apps and 5 years of shipping real products.</p>
+      </div>
+
+      <div class="stack__categories">
+        <div class="stack__category reveal reveal-delay-1">
+          <div class="stack__category-title"><span class="stack__category-icon">💎</span> Core</div>
+          <div class="stack__pills">
+            <span class="stack__pill">Flutter</span>
+            <span class="stack__pill">Dart</span>
+            <span class="stack__pill">Material Design</span>
+            <span class="stack__pill">Cupertino</span>
+            <span class="stack__pill">Flutter Web</span>
+            <span class="stack__pill">Android TV</span>
+          </div>
+        </div>
+
+        <div class="stack__category reveal reveal-delay-2">
+          <div class="stack__category-title"><span class="stack__category-icon">🧠</span> State Management</div>
+          <div class="stack__pills">
+            <span class="stack__pill stack__pill--purple">GetX</span>
+            <span class="stack__pill stack__pill--purple">Riverpod</span>
+            <span class="stack__pill stack__pill--purple">Provider</span>
+            <span class="stack__pill stack__pill--purple">BLoC</span>
+          </div>
+        </div>
+
+        <div class="stack__category reveal reveal-delay-3">
+          <div class="stack__category-title"><span class="stack__category-icon">🔗</span> Backend & APIs</div>
+          <div class="stack__pills">
+            <span class="stack__pill stack__pill--cyan">REST APIs (Dio)</span>
+            <span class="stack__pill stack__pill--cyan">Retrofit</span>
+            <span class="stack__pill stack__pill--cyan">Firebase</span>
+            <span class="stack__pill stack__pill--cyan">Odoo ERP</span>
+            <span class="stack__pill stack__pill--cyan">WebSockets</span>
+            <span class="stack__pill stack__pill--cyan">Pusher</span>
+          </div>
+        </div>
+
+        <div class="stack__category reveal reveal-delay-4">
+          <div class="stack__category-title"><span class="stack__category-icon">💳</span> Payments</div>
+          <div class="stack__pills">
+            <span class="stack__pill stack__pill--emerald">AFS Benefit Gateway</span>
+            <span class="stack__pill stack__pill--emerald">Custom Payment SDKs</span>
+            <span class="stack__pill stack__pill--emerald">AES-256 Encryption</span>
+            <span class="stack__pill stack__pill--emerald">3DS2</span>
+          </div>
+        </div>
+
+        <div class="stack__category reveal reveal-delay-5">
+          <div class="stack__category-title"><span class="stack__category-icon">🗺️</span> Maps & Location</div>
+          <div class="stack__pills">
+            <span class="stack__pill stack__pill--amber">Google Maps</span>
+            <span class="stack__pill stack__pill--amber">OpenStreetMap</span>
+            <span class="stack__pill stack__pill--amber">Geolocator</span>
+            <span class="stack__pill stack__pill--amber">Real-time Tracking</span>
+          </div>
+        </div>
+
+        <div class="stack__category reveal">
+          <div class="stack__category-title"><span class="stack__category-icon">🔧</span> Hardware & IoT</div>
+          <div class="stack__pills">
+            <span class="stack__pill">BLE (flutter_blue_plus)</span>
+            <span class="stack__pill">Thermal Printers (Nyx)</span>
+            <span class="stack__pill">USB Cameras (UVC)</span>
+            <span class="stack__pill">Smartwatches (E900)</span>
+            <span class="stack__pill">Platform Channels</span>
+          </div>
+        </div>
+
+        <div class="stack__category reveal">
+          <div class="stack__category-title"><span class="stack__category-icon">🤖</span> ML & AI</div>
+          <div class="stack__pills">
+            <span class="stack__pill stack__pill--purple">TensorFlow Lite</span>
+            <span class="stack__pill stack__pill--purple">Face Detection</span>
+            <span class="stack__pill stack__pill--purple">Content Classification</span>
+          </div>
+        </div>
+
+        <div class="stack__category reveal">
+          <div class="stack__category-title"><span class="stack__category-icon">🏗️</span> Architecture & DevOps</div>
+          <div class="stack__pills">
+            <span class="stack__pill stack__pill--cyan">Clean Architecture</span>
+            <span class="stack__pill stack__pill--cyan">Repository Pattern</span>
+            <span class="stack__pill stack__pill--cyan">Feature-first</span>
+            <span class="stack__pill stack__pill--cyan">FVM</span>
+            <span class="stack__pill stack__pill--cyan">FlutterGen</span>
+            <span class="stack__pill stack__pill--cyan">Firebase (Auth, FCM, Firestore)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FEATURED PROJECTS ==================== -->
+  <section class="section" id="featured">
+    <div class="container">
+      <div class="reveal">
+        <span class="section__label">Featured Work</span>
+        <h2 class="section__title">Projects that <span class="gradient-text">define my craft</span></h2>
+        <p class="section__subtitle">Multi-app ecosystems built for production — each powering real businesses and real users.</p>
+      </div>
+
+      <div class="featured__grid">
+
+        <!-- CHICKET -->
+        <div class="featured__card reveal reveal-delay-1">
+          <div class="featured__card-image-wrapper">
+            <img src="assets/images/chicket.jpg" alt="Chicket — Restaurant Self-Ordering Kiosk" class="featured__card-image" loading="lazy">
+          </div>
+          <div class="featured__card-body">
+            <div class="featured__card-meta">
+              <span class="featured__card-badge featured__card-badge--food">Restaurant Tech</span>
+              <span class="featured__card-apps">2 apps · v1.0.0+32</span>
+            </div>
+            <h3 class="featured__card-title">Chicket</h3>
+            <p class="featured__card-desc">
+              Self-ordering kiosk and POS system for chicken restaurants, deployed across Bahrain and Morocco. Built a custom AFS payment SDK from scratch to handle Benefit card transactions with AES-256 encryption and 3DS2 authentication.
+            </p>
+            <div class="featured__card-tech">
+              <span class="featured__card-tech-pill">Flutter</span>
+              <span class="featured__card-tech-pill">GetX</span>
+              <span class="featured__card-tech-pill">AFS Payment SDK</span>
+              <span class="featured__card-tech-pill">Dio</span>
+              <span class="featured__card-tech-pill">i18n</span>
+              <span class="featured__card-tech-pill">Thermal Printing</span>
+            </div>
+            <div class="featured__card-features">
+              <div class="featured__card-features-title">Key Features</div>
+              <div class="featured__card-features-list">
+                <span class="featured__card-feature">Self-ordering kiosk UI</span>
+                <span class="featured__card-feature">Custom payment gateway</span>
+                <span class="featured__card-feature">Multi-country deployment</span>
+                <span class="featured__card-feature">Receipt printing (iCOD)</span>
+                <span class="featured__card-feature">Cart & order management</span>
+                <span class="featured__card-feature">Real-time order tracking</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- LIME POS -->
+        <div class="featured__card reveal reveal-delay-2">
+          <div class="featured__card-image-wrapper">
+            <img src="assets/images/lime_pos.jpg" alt="Lime POS — Restaurant Management Suite" class="featured__card-image" loading="lazy">
+          </div>
+          <div class="featured__card-body">
+            <div class="featured__card-meta">
+              <span class="featured__card-badge featured__card-badge--pos">POS Suite</span>
+              <span class="featured__card-apps">3 apps · Active development</span>
+            </div>
+            <h3 class="featured__card-title">Lime POS Suite</h3>
+            <p class="featured__card-desc">
+              A complete restaurant management ecosystem — three interconnected apps covering cashier POS, kitchen display, and owner management dashboard. Tracks revenue, orders, outlet comparison, and employee performance across multiple Bahrain locations.
+            </p>
+            <div class="featured__card-tech">
+              <span class="featured__card-tech-pill">Flutter</span>
+              <span class="featured__card-tech-pill">Windows Desktop</span>
+              <span class="featured__card-tech-pill">REST APIs</span>
+              <span class="featured__card-tech-pill">Charts</span>
+              <span class="featured__card-tech-pill">Retrofit</span>
+              <span class="featured__card-tech-pill">Saved Views</span>
+            </div>
+            <div class="featured__card-features">
+              <div class="featured__card-features-title">Key Features</div>
+              <div class="featured__card-features-list">
+                <span class="featured__card-feature">Multi-outlet analytics</span>
+                <span class="featured__card-feature">Revenue dashboards</span>
+                <span class="featured__card-feature">Order management</span>
+                <span class="featured__card-feature">Windows desktop app</span>
+                <span class="featured__card-feature">Outlet comparison</span>
+                <span class="featured__card-feature">Employee management</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- WAFAA+ -->
+        <div class="featured__card reveal reveal-delay-3">
+          <div class="featured__card-image-wrapper">
+            <img src="assets/images/wafaa.jpg" alt="Wafaa+ — Loyalty & Rewards Platform" class="featured__card-image" loading="lazy">
+          </div>
+          <div class="featured__card-body">
+            <div class="featured__card-meta">
+              <span class="featured__card-badge featured__card-badge--loyalty">Loyalty & FinTech</span>
+              <span class="featured__card-apps">2 apps · v2.5.2 · 41 builds</span>
+            </div>
+            <h3 class="featured__card-title">Wafaa+ Loyalty</h3>
+            <p class="featured__card-desc">
+              The most feature-rich app in my portfolio — a complete loyalty and rewards ecosystem with 41 production builds. Customer app with QR scanning, digital wallet, in-app chat, biometric auth, referral programs, and tiered membership (Platinum). Plus a merchant management app.
+            </p>
+            <div class="featured__card-tech">
+              <span class="featured__card-tech-pill">Flutter</span>
+              <span class="featured__card-tech-pill">GetX</span>
+              <span class="featured__card-tech-pill">QR Scanner</span>
+              <span class="featured__card-tech-pill">Deep Linking</span>
+              <span class="featured__card-tech-pill">Biometrics</span>
+              <span class="featured__card-tech-pill">WebView</span>
+            </div>
+            <div class="featured__card-features">
+              <div class="featured__card-features-title">Key Features</div>
+              <div class="featured__card-features-list">
+                <span class="featured__card-feature">Digital wallet & payments</span>
+                <span class="featured__card-feature">QR code loyalty scanning</span>
+                <span class="featured__card-feature">Tiered membership system</span>
+                <span class="featured__card-feature">In-app chat & support</span>
+                <span class="featured__card-feature">Referral & earn program</span>
+                <span class="featured__card-feature">Merchant dashboard app</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ATHERMINDS ADS -->
+        <div class="featured__card reveal reveal-delay-4">
+          <div class="featured__card-image-wrapper">
+            <img src="assets/images/atherminds.jpg" alt="Atherminds Ads — Digital Signage Platform" class="featured__card-image" loading="lazy">
+          </div>
+          <div class="featured__card-body">
+            <div class="featured__card-meta">
+              <span class="featured__card-badge featured__card-badge--ads">Digital Signage</span>
+              <span class="featured__card-apps">4 apps · v1.2.0+25</span>
+            </div>
+            <h3 class="featured__card-title">Atherminds Ads</h3>
+            <p class="featured__card-desc">
+              A 4-app smart TV advertising ecosystem — ads player for TV screens, agent app for field technicians, client dashboard for campaign management, and a device activation/scanning app. Controls digital signage networks across multiple locations.
+            </p>
+            <div class="featured__card-tech">
+              <span class="featured__card-tech-pill">Flutter</span>
+              <span class="featured__card-tech-pill">Riverpod</span>
+              <span class="featured__card-tech-pill">Android TV</span>
+              <span class="featured__card-tech-pill">Video Playback</span>
+              <span class="featured__card-tech-pill">Device Activation</span>
+              <span class="featured__card-tech-pill">REST APIs</span>
+            </div>
+            <div class="featured__card-features">
+              <div class="featured__card-features-title">Key Features</div>
+              <div class="featured__card-features-list">
+                <span class="featured__card-feature">Smart TV ad playback</span>
+                <span class="featured__card-feature">Campaign scheduling</span>
+                <span class="featured__card-feature">Device fleet management</span>
+                <span class="featured__card-feature">Agent field scanning</span>
+                <span class="featured__card-feature">Analytics dashboard</span>
+                <span class="featured__card-feature">Multi-location control</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ALL PROJECTS ==================== -->
+  <section class="section projects" id="all-projects">
+    <div class="container">
+      <div class="reveal">
+        <span class="section__label">All Projects</span>
+        <h2 class="section__title">The complete <span class="gradient-text">portfolio</span></h2>
+        <p class="section__subtitle">Every project I've worked on, organized by industry.</p>
+      </div>
+
+      <div class="projects__filters reveal">
+        <button class="projects__filter active" data-filter="all">All</button>
+        <button class="projects__filter" data-filter="food">🍽️ Restaurant</button>
+        <button class="projects__filter" data-filter="transport">🚗 Transport</button>
+        <button class="projects__filter" data-filter="health">🏥 Healthcare</button>
+        <button class="projects__filter" data-filter="ecommerce">🛒 E-Commerce</button>
+        <button class="projects__filter" data-filter="fintech">💰 FinTech</button>
+        <button class="projects__filter" data-filter="iot">⌚ IoT</button>
+        <button class="projects__filter" data-filter="gaming">🎮 Gaming</button>
+        <button class="projects__filter" data-filter="education">♟️ Education</button>
+        <button class="projects__filter" data-filter="hr">🏢 HR & Ops</button>
+      </div>
+
+      <div class="projects__grid">
+
+        <!-- FOOD -->
+        <div class="project-card reveal" data-category="food">
+          <div class="project-card__header">
+            <span class="project-card__icon">🍳</span>
+            <span class="project-card__app-count">2 apps</span>
+          </div>
+          <div class="project-card__title">Norda Kitchen</div>
+          <div class="project-card__desc">Cloud/ghost kitchen subscription platform with BLE device integration, Google Maps delivery, and health API.</div>
+          <div class="project-card__tech">
+            <span class="project-card__tech-pill">BLE</span>
+            <span class="project-card__tech-pill">Maps</span>
+            <span class="project-card__tech-pill">Firebase Auth</span>
+            <span class="project-card__tech-pill">Subscriptions</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="food">
+          <div class="project-card__header">
+            <span class="project-card__icon">🛵</span>
+            <span class="project-card__app-count">2 apps</span>
+          </div>
+          <div class="project-card__title">eFood</div>
+          <div class="project-card__desc">Food delivery platform with customer ordering app and delivery driver app with real-time tracking.</div>
+          <div class="project-card__tech">
+            <span class="project-card__tech-pill">Firebase</span>
+            <span class="project-card__tech-pill">Maps</span>
+            <span class="project-card__tech-pill">Real-time</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="food">
+          <div class="project-card__header">
+            <span class="project-card__icon">☕</span>
+          </div>
+          <div class="project-card__title">Roastery</div>
+          <div class="project-card__desc">Coffee roastery e-commerce and ordering app for specialty coffee businesses.</div>
+          <div class="project-card__tech">
+            <span class="project-card__tech-pill">E-commerce</span>
+            <span class="project-card__tech-pill">Ordering</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="food">
+          <div class="project-card__header">
+            <span class="project-card__icon">🍴</span>
+            <span class="project-card__app-count">2 versions</span>
+          </div>
+          <div class="project-card__title">Dine-In App</div>
+          <div class="project-card__desc">In-restaurant ordering app. Migrated backend from .NET v1 to v2, demonstrating codebase evolution.</div>
+          <div class="project-card__tech">
+            <span class="project-card__tech-pill">.NET API</span>
+            <span class="project-card__tech-pill">Migration</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="food">
+          <div class="project-card__header">
+            <span class="project-card__icon">🫖</span>
+          </div>
+          <div class="project-card__title">Tea POS</div>
+          <div class="project-card__desc">SaaS-based POS system designed for tea and café businesses.</div>
+          <div class="project-card__tech">
+            <span class="project-card__tech-pill">SaaS</span>
+            <span class="project-card__tech-pill">POS</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="food">
+          <div class="project-card__header">
+            <span class="project-card__icon">🍕</span>
+          </div>
+          <div class="project-card__title">Foodyman</div>
+          <div class="project-card__desc">Multi-vendor food delivery platform built with Riverpod architecture. 61 production builds.</div>
+          <div class="project-card__tech">
+            <span class="project-card__tech-pill">Riverpod</span>
+            <span class="project-card__tech-pill">Multi-vendor</span>
+            <span class="project-card__tech-pill">61 builds</span>
+          </div>
+        </div>
+
+        <!-- TRANSPORT -->
+        <div class="project-card reveal" data-category="transport">
+          <div class="project-card__header">
+            <span class="project-card__icon">🚕</span>
+            <span class="project-card__app-count">2 apps</span>
+          </div>
+          <div class="project-card__title">Safar Cab</div>
+          <div class="project-card__desc">Uber-style ride-hailing platform with rider and driver apps, real-time GPS tracking, and trip management.</div>
+          <div class="project-card__tech">
+            <span class="project-card__tech-pill">Google Maps</span>
+            <span class="project-card__tech-pill">GPS Tracking</span>
+            <span class="project-card__tech-pill">Firebase</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="transport">
+          <div class="project-card__header">
+            <span class="project-card__icon">🚛</span>
+            <span class="project-card__app-count">3 apps</span>
+          </div>
+          <div class="project-card__title">Exodus</div>
+          <div class="project-card__desc">3-app trucking and logistics ecosystem — customer booking, driver dispatch, and fleet owner management.</div>
+          <div class="project-card__tech">
+            <span class="project-card__tech-pill">Fleet Mgmt</span>
+            <span class="project-card__tech-pill">Booking</span>
+            <span class="project-card__tech-pill">Dispatch</span>
+          </div>
+        </div>
+
+        <!-- HEALTHCARE -->
+        <div class="project-card reveal" data-category="health">
+          <div class="project-card__header">
+            <span class="project-card__icon">🏥</span>
+            <span class="project-card__app-count">3 apps</span>
+          </div>
+          <div class="project-card__title">Hospivio</div>
+          <div class="project-card__desc">Hospital management suite — manager, staff, and front desk apps. Handles room updates, leave requests, and notifications.</div>
+          <div class="project-card__tech">
+            <span class="project-card__tech-pill">Healthcare</span>
+            <span class="project-card__tech-pill">Room Mgmt</span>
+            <span class="project-card__tech-pill">Staff</span>
+          </div>
+        </div>
+
+        <!-- E-COMMERCE -->
+        <div class="project-card reveal" data-category="ecommerce">
+          <div class="project-card__header">
+            <span class="project-card__icon">🛍️</span>
+          </div>
+          <div class="project-card__title">CityMart</div>
+          <div class="project-card__desc">Full-featured e-commerce mobile app with internationalization (i18n), Postman API collection, and comprehensive product catalog.</div>
+          <div class="project-card__tech">
+            <span class="project-card__tech-pill">i18n</span>
+            <span class="project-card__tech-pill">E-commerce</span>
+            <span class="project-card__tech-pill">REST APIs</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="ecommerce">
+          <div class="project-card__header">
+            <span class="project-card__icon">📦</span>
+          </div>
+          <div class="project-card__title">Odoo Inventory</div>
+          <div class="project-card__desc">Odoo ERP inventory management mobile app for warehouse and stock tracking operations.</div>
+          <div class="project-card__tech">
+            <span class="project-card__tech-pill">Odoo ERP</span>
+            <span class="project-card__tech-pill">Inventory</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="ecommerce">
+          <div class="project-card__header">
+            <span class="project-card__icon">🏠</span>
+          </div>
+          <div class="project-card__title">RentPro</div>
+          <div class="project-card__desc">Real estate rental management platform for property listings, tenant management, and rent tracking.</div>
+          <div class="project-card__tech">
+            <span class="project-card__tech-pill">Real Estate</span>
+            <span class="project-card__tech-pill">Listings</span>
+          </div>
+        </div>
+
+        <!-- FINTECH -->
+        <div class="project-card reveal" data-category="fintech">
+          <div class="project-card__header">
+            <span class="project-card__icon">⭐</span>
+          </div>
+          <div class="project-card__title">Star Discounts</div>
+          <div class="project-card__desc">Discount and deals platform with curated offers from local and international brands.</div>
+          <div class="project-card__tech">
+            <span class="project-card__tech-pill">Deals</span>
+            <span class="project-card__tech-pill">Offers</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="fintech">
+          <div class="project-card__header">
+            <span class="project-card__icon">💫</span>
+            <span class="project-card__app-count">2 apps</span>
+          </div>
+          <div class="project-card__title">Winso</div>
+          <div class="project-card__desc">Raffle and lottery platform with integrated payment app for ticket purchases and prize claims.</div>
+          <div class="project-card__tech">
+            <span class="project-card__tech-pill">Raffle</span>
+            <span class="project-card__tech-pill">Payments</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="fintech">
+          <div class="project-card__header">
+            <span class="project-card__icon">💰</span>
+          </div>
+          <div class="project-card__title">Star Pay</div>
+          <div class="project-card__desc">Payment collection and processing app for managing financial transactions.</div>
+          <div class="project-card__tech">
+            <span class="project-card__tech-pill">Payments</span>
+            <span class="project-card__tech-pill">Collection</span>
+          </div>
+        </div>
+
+        <!-- IoT -->
+        <div class="project-card reveal" data-category="iot">
+          <div class="project-card__header">
+            <span class="project-card__icon">⌚</span>
+            <span class="project-card__app-count">App + SDK</span>
+          </div>
+          <div class="project-card__title">Neurya</div>
+          <div class="project-card__desc">Smart watch health tracking app + a plug-and-play Flutter SDK for E900 series smartwatches with BLE, health data sync, and device management.</div>
+          <div class="project-card__tech">
+            <span class="project-card__tech-pill">BLE</span>
+            <span class="project-card__tech-pill">Health API</span>
+            <span class="project-card__tech-pill">SDK</span>
+            <span class="project-card__tech-pill">Charts</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="iot">
+          <div class="project-card__header">
+            <span class="project-card__icon">📡</span>
+          </div>
+          <div class="project-card__title">QC Band</div>
+          <div class="project-card__desc">QCBand SDK integration app for wearable health monitoring devices.</div>
+          <div class="project-card__tech">
+            <span class="project-card__tech-pill">Wearables</span>
+            <span class="project-card__tech-pill">SDK</span>
+          </div>
+        </div>
+
+        <!-- GAMING -->
+        <div class="project-card reveal" data-category="gaming">
+          <div class="project-card__header">
+            <span class="project-card__icon">🎮</span>
+          </div>
+          <div class="project-card__title">GameOn</div>
+          <div class="project-card__desc">Gaming platform with multiple game types and user engagement features.</div>
+          <div class="project-card__tech">
+            <span class="project-card__tech-pill">Gaming</span>
+            <span class="project-card__tech-pill">Animations</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="gaming">
+          <div class="project-card__header">
+            <span class="project-card__icon">🎲</span>
+          </div>
+          <div class="project-card__title">Ludo</div>
+          <div class="project-card__desc">Classic Ludo board game built entirely in Flutter with smooth animations. 10 production builds.</div>
+          <div class="project-card__tech">
+            <span class="project-card__tech-pill">Board Game</span>
+            <span class="project-card__tech-pill">Custom Paint</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="gaming">
+          <div class="project-card__header">
+            <span class="project-card__icon">🐍</span>
+          </div>
+          <div class="project-card__title">Snake & Ladder</div>
+          <div class="project-card__desc">Classic snake and ladder board game with multiplayer support and animated gameplay.</div>
+          <div class="project-card__tech">
+            <span class="project-card__tech-pill">Board Game</span>
+            <span class="project-card__tech-pill">Multiplayer</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="gaming">
+          <div class="project-card__header">
+            <span class="project-card__icon">🎯</span>
+          </div>
+          <div class="project-card__title">Color Prediction</div>
+          <div class="project-card__desc">Color prediction game with engaging UI animations and scoring system.</div>
+          <div class="project-card__tech">
+            <span class="project-card__tech-pill">Game Logic</span>
+            <span class="project-card__tech-pill">Animations</span>
+          </div>
+        </div>
+
+        <!-- EDUCATION -->
+        <div class="project-card reveal" data-category="education">
+          <div class="project-card__header">
+            <span class="project-card__icon">♟️</span>
+          </div>
+          <div class="project-card__title">ACA Chess Academy</div>
+          <div class="project-card__desc">Chess academy management with class schedules, tournaments, performance tracking, certificates, fee payments, and push notifications.</div>
+          <div class="project-card__tech">
+            <span class="project-card__tech-pill">Calendar</span>
+            <span class="project-card__tech-pill">Firebase FCM</span>
+            <span class="project-card__tech-pill">PDF</span>
+            <span class="project-card__tech-pill">WebView</span>
+          </div>
+        </div>
+
+        <!-- HR -->
+        <div class="project-card reveal" data-category="hr">
+          <div class="project-card__header">
+            <span class="project-card__icon">👥</span>
+            <span class="project-card__app-count">2 apps</span>
+          </div>
+          <div class="project-card__title">HRMS</div>
+          <div class="project-card__desc">HR Management System with admin panel and employee app for leave management, attendance, and team coordination.</div>
+          <div class="project-card__tech">
+            <span class="project-card__tech-pill">Admin Panel</span>
+            <span class="project-card__tech-pill">Employee App</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="hr">
+          <div class="project-card__header">
+            <span class="project-card__icon">📍</span>
+          </div>
+          <div class="project-card__title">Attendance Tracker</div>
+          <div class="project-card__desc">Location-based punch in/out attendance tracking with GPS capture for workforce management.</div>
+          <div class="project-card__tech">
+            <span class="project-card__tech-pill">Geolocation</span>
+            <span class="project-card__tech-pill">Attendance</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="ecommerce">
+          <div class="project-card__header">
+            <span class="project-card__icon">🏪</span>
+          </div>
+          <div class="project-card__title">Four Square</div>
+          <div class="project-card__desc">E-commerce and ordering application with product catalog and checkout flow.</div>
+          <div class="project-card__tech">
+            <span class="project-card__tech-pill">E-commerce</span>
+            <span class="project-card__tech-pill">Ordering</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== OPEN SOURCE PACKAGES ==================== -->
+  <section class="section" id="packages">
+    <div class="container">
+      <div class="reveal">
+        <span class="section__label">Open Source</span>
+        <h2 class="section__title">Published <span class="gradient-text">Flutter Packages</span></h2>
+        <p class="section__subtitle">Tools I built and published for the Flutter community — from hardware drivers to payment SDKs.</p>
+      </div>
+
+      <div class="packages__grid">
+
+        <div class="package-card reveal reveal-delay-1">
+          <div class="package-card__header">
+            <span class="package-card__name">nyx_printer_v2</span>
+            <span class="package-card__version">v1.2.2</span>
+          </div>
+          <p class="package-card__desc">
+            Flutter plugin for Nyx printers (NB55, T2 Pro, T2 Plus) — print text, barcodes, QR codes, and images via Android AIDL service binding.
+          </p>
+          <div class="package-card__install" data-cmd="flutter pub add nyx_printer_v2">
+            <span class="package-card__install-prefix">$</span>
+            flutter pub add nyx_printer_v2
+            <span class="package-card__install-copy">📋 Copy</span>
+          </div>
+          <div class="package-card__features">
+            <span class="package-card__feature">Text, Barcode, QR printing</span>
+            <span class="package-card__feature">Image printing (PNG)</span>
+            <span class="package-card__feature">Custom text formatting</span>
+            <span class="package-card__feature">Android 14+ support</span>
+          </div>
+        </div>
+
+        <div class="package-card reveal reveal-delay-2">
+          <div class="package-card__header">
+            <span class="package-card__name">afs_gateway</span>
+            <span class="package-card__version">v1.0.0</span>
+          </div>
+          <p class="package-card__desc">
+            AFS Benefit Payment Gateway SDK — AES-256-CBC encryption, automated 3DS2 authentication, JS bridge for result interception, and deep link support.
+          </p>
+          <div class="package-card__install" data-cmd="flutter pub add afs_gateway">
+            <span class="package-card__install-prefix">$</span>
+            flutter pub add afs_gateway
+            <span class="package-card__install-copy">📋 Copy</span>
+          </div>
+          <div class="package-card__features">
+            <span class="package-card__feature">AES-256-CBC encryption</span>
+            <span class="package-card__feature">3DS2 authentication</span>
+            <span class="package-card__feature">JS bridge interception</span>
+            <span class="package-card__feature">Sandbox test cards</span>
+          </div>
+        </div>
+
+        <div class="package-card reveal reveal-delay-3">
+          <div class="package-card__header">
+            <span class="package-card__name">photo_analyzer</span>
+            <span class="package-card__version">v0.2.4</span>
+          </div>
+          <p class="package-card__desc">
+            ML-powered photo analysis — face detection, gender estimation, and NSFW content classification using TensorFlow Lite on-device inference.
+          </p>
+          <div class="package-card__install" data-cmd="flutter pub add photo_analyzer">
+            <span class="package-card__install-prefix">$</span>
+            flutter pub add photo_analyzer
+            <span class="package-card__install-copy">📋 Copy</span>
+          </div>
+          <div class="package-card__features">
+            <span class="package-card__feature">Face detection</span>
+            <span class="package-card__feature">Gender estimation</span>
+            <span class="package-card__feature">NSFW classification</span>
+            <span class="package-card__feature">TensorFlow Lite</span>
+          </div>
+        </div>
+
+        <div class="package-card reveal reveal-delay-4">
+          <div class="package-card__header">
+            <span class="package-card__name">neurya_sdk</span>
+            <span class="package-card__version">v0.0.1</span>
+          </div>
+          <p class="package-card__desc">
+            Plug-and-play Flutter SDK for E900 series smartwatches. Health tracking, device management, and data synchronization over BLE.
+          </p>
+          <div class="package-card__install" data-cmd="flutter pub add neurya_sdk">
+            <span class="package-card__install-prefix">$</span>
+            flutter pub add neurya_sdk
+            <span class="package-card__install-copy">📋 Copy</span>
+          </div>
+          <div class="package-card__features">
+            <span class="package-card__feature">BLE communication</span>
+            <span class="package-card__feature">Health data sync</span>
+            <span class="package-card__feature">Device management</span>
+            <span class="package-card__feature">Calendar UI</span>
+          </div>
+        </div>
+
+        <div class="package-card reveal reveal-delay-5">
+          <div class="package-card__header">
+            <span class="package-card__name">flutter_uvc_camera</span>
+            <span class="package-card__version">v0.2.0</span>
+          </div>
+          <p class="package-card__desc">
+            USB Video Class (UVC) camera support for Android — enables Flutter apps to interface with external USB cameras via platform channels.
+          </p>
+          <div class="package-card__install" data-cmd="flutter pub add flutter_uvc_camera">
+            <span class="package-card__install-prefix">$</span>
+            flutter pub add flutter_uvc_camera
+            <span class="package-card__install-copy">📋 Copy</span>
+          </div>
+          <div class="package-card__features">
+            <span class="package-card__feature">USB camera support</span>
+            <span class="package-card__feature">Platform channels</span>
+            <span class="package-card__feature">Android native</span>
+          </div>
+        </div>
+
+        <div class="package-card reveal">
+          <div class="package-card__header">
+            <span class="package-card__name">benefit_pg_flutter</span>
+            <span class="package-card__version">v0.0.1</span>
+          </div>
+          <p class="package-card__desc">
+            Benefit payment gateway plugin for Flutter — enabling secure card payment processing for Bahrain's Benefit network.
+          </p>
+          <div class="package-card__install" data-cmd="flutter pub add benefit_pg_flutter">
+            <span class="package-card__install-prefix">$</span>
+            flutter pub add benefit_pg_flutter
+            <span class="package-card__install-copy">📋 Copy</span>
+          </div>
+          <div class="package-card__features">
+            <span class="package-card__feature">Benefit network</span>
+            <span class="package-card__feature">Card payments</span>
+            <span class="package-card__feature">Bahrain market</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TIMELINE ==================== -->
+  <section class="section timeline" id="timeline">
+    <div class="container">
+      <div class="reveal">
+        <span class="section__label">Journey</span>
+        <h2 class="section__title">How I got <span class="gradient-text">here</span></h2>
+      </div>
+
+      <div class="timeline__track">
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__year">2021 – Getting Started</div>
+          <div class="timeline__event">First Flutter Projects</div>
+          <div class="timeline__desc">Began professional Flutter development. Built early projects including e-commerce apps, games (Ludo, Snake & Ladder), and HRMS systems. Learned the fundamentals of cross-platform mobile development.</div>
+        </div>
+
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__year">2022 – Building Scale</div>
+          <div class="timeline__event">Multi-App Ecosystems</div>
+          <div class="timeline__desc">Graduated to building multi-app ecosystems — Safar Cab (rider + driver), Exodus (3-app trucking platform), and Hospivio (3-app hospital suite). Learned to architect interconnected systems that share logic and APIs.</div>
+        </div>
+
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__year">2023 – Specialization</div>
+          <div class="timeline__event">Payment SDKs & Restaurant Tech</div>
+          <div class="timeline__desc">Deep-dived into the restaurant/POS space with Chicket and Lime POS. Built the AFS Benefit Payment Gateway SDK from scratch — handling AES-256 encryption, 3DS2, and JS bridge interception. Wafaa+ loyalty platform hit its stride.</div>
+        </div>
+
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__year">2024 – IoT & Hardware</div>
+          <div class="timeline__event">Beyond the Screen</div>
+          <div class="timeline__desc">Extended Flutter into hardware — built Neurya SDK for smartwatches over BLE, Nyx Printer plugin for thermal receipt printers, and UVC Camera plugin for USB cameras. Published packages to the Flutter community.</div>
+        </div>
+
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__year">2025 – Present</div>
+          <div class="timeline__event">Full-Stack Flutter Mastery</div>
+          <div class="timeline__desc">Leading development on Atherminds (4-app smart TV ad platform), Norda Kitchen (cloud kitchen with health API), and Lime POS Management (Windows desktop). Building ML-powered packages with TFLite. 30+ apps shipped and counting.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact__cta reveal">
+        <span class="section__label" style="justify-content:center">Contact</span>
+        <h2 class="contact__heading">Let's build something <span class="gradient-text">incredible</span></h2>
+        <p class="contact__text">
+          Whether you need a complete mobile app ecosystem, a Flutter SDK, or a technical lead for your mobile team — I'm here to help turn your vision into production-ready software.
+        </p>
+        <a href="mailto:paul@diodeinfosolutions.com" class="contact__button">
+          ✉️ Get in Touch
+        </a>
+
+        <div class="contact__socials">
+          <a href="https://github.com/p-Osteen" target="_blank" rel="noopener" class="contact__social" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/paulosteen" target="_blank" rel="noopener" class="contact__social" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://twitter.com/paulosteen" target="_blank" rel="noopener" class="contact__social" aria-label="X / Twitter">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__text">
+        © 2025 Paul Osteen. Built with <span class="footer__heart">❤️</span> and
+        <span class="footer__flutter">Flutter</span> expertise.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Toast notification -->
+  <div class="toast" id="toast"></div>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
