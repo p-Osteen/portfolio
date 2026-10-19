@@ -7,7 +7,7 @@
   <meta name="description" content="Paul Osteen is a Senior Flutter Developer with 5 years of experience shipping 30+ production apps across 12+ industries — multi-app ecosystems, IoT integrations and published Flutter packages.">
   <meta name="theme-color" content="#0b0b0c">
   <meta property="og:title" content="Paul Osteen — Senior Flutter Developer">
-  <meta property="og:description" content="30+ production apps, 7 multi-app ecosystems, published Flutter packages on pub.dev.">
+  <meta property="og:description" content="30+ production apps, 7 multi-app ecosystems, 6 Flutter packages.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/images/paul_profile.jpg">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230b0b0c'/><circle cx='50' cy='50' r='16' fill='%23f5f5f3'/></svg>">
@@ -55,7 +55,7 @@
           <div><dt>Apps shipped</dt><dd>30+</dd></div>
           <div><dt>Multi-app ecosystems</dt><dd>7</dd></div>
           <div><dt>Industries</dt><dd>12+</dd></div>
-          <div><dt>Packages on pub.dev</dt><dd>2</dd></div>
+          <div><dt>Flutter packages</dt><dd>6</dd></div>
         </dl>
       </div>
     </section>
@@ -69,7 +69,7 @@
         </div>
         <div class="about__text reveal" style="--i:1">
           <p>I lead Flutter development at Diode Info Solutions, building cross-platform apps for clients across Bahrain, Morocco and beyond. My speciality is the multi-app ecosystem — suites of three or four interconnected apps that together run a whole business.</p>
-          <p>I also publish Flutter packages on pub.dev — a Nyx printer driver and an on-device photo analysis toolkit — that other developers use in their own projects.</p>
+          <p>I also create Flutter packages — hardware printer drivers, payment gateway SDKs and on-device ML tools — some of them published on pub.dev.</p>
         </div>
       </div>
 
@@ -78,7 +78,7 @@
           <li class="reveal" style="--i:0"><h3>Enterprise scale</h3><p>Led mobile development for 7 multi-app ecosystems, each with 2–4 interconnected applications.</p></li>
           <li class="reveal" style="--i:1"><h3>Multi-country</h3><p>Apps serving users in Bahrain, Morocco and other markets, with full localisation.</p></li>
           <li class="reveal" style="--i:2"><h3>Hardware &amp; IoT</h3><p>BLE smartwatches, thermal printers, USB cameras and payment terminals integrated into Flutter.</p></li>
-          <li class="reveal" style="--i:3"><h3>Open source</h3><p>Two packages on pub.dev: a thermal-printer driver and on-device photo analysis.</p></li>
+          <li class="reveal" style="--i:3"><h3>Open source</h3><p>Six Flutter packages: printer drivers, payment SDKs and on-device ML.</p></li>
         </ul>
       </div>
     </section>
@@ -188,8 +188,8 @@
       <div class="wrap">
         <div class="reveal">
           <p class="label">Open source</p>
-          <h2 id="packages-title">Published Flutter packages</h2>
-          <p class="lede">Tools I built and released for the community. Click a command to copy it.</p>
+          <h2 id="packages-title">Flutter packages</h2>
+          <p class="lede">Tools I built for hardware, payments and on-device ML. Names link to pub.dev where published. Click a command to copy it.</p>
         </div>
 
         <div class="pkgs">
@@ -200,10 +200,34 @@
             <ul class="tags"><li>Text, barcode, QR</li><li>PNG printing</li><li>Android 14+</li></ul>
           </article>
           <article class="pkg reveal" style="--i:1">
+            <header><h3>afs_gateway</h3><span>v1.0.0</span></header>
+            <p>AFS Benefit Payment Gateway SDK — AES-256-CBC encryption, automated 3DS2 authentication, JS bridge result interception and deep-link support.</p>
+            <button class="cmd" type="button" data-cmd="flutter pub add afs_gateway"><code>flutter pub add afs_gateway</code><em>Copy</em></button>
+            <ul class="tags"><li>AES-256-CBC</li><li>3DS2</li><li>JS bridge</li><li>Sandbox cards</li></ul>
+          </article>
+          <article class="pkg reveal" style="--i:2">
             <header><h3><a href="https://pub.dev/packages/photo_analyzer" target="_blank" rel="noopener">photo_analyzer</a></h3><span>v0.2.4</span></header>
             <p>ML-powered photo analysis — face detection, gender estimation and NSFW classification with TensorFlow Lite on-device inference.</p>
             <button class="cmd" type="button" data-cmd="flutter pub add photo_analyzer"><code>flutter pub add photo_analyzer</code><em>Copy</em></button>
             <ul class="tags"><li>Face detection</li><li>Gender estimation</li><li>NSFW classification</li></ul>
+          </article>
+          <article class="pkg reveal" style="--i:0">
+            <header><h3>neurya_sdk</h3><span>v0.0.1</span></header>
+            <p>Plug-and-play SDK for E900-series smartwatches. Health tracking, device management and data sync over BLE.</p>
+            <button class="cmd" type="button" data-cmd="flutter pub add neurya_sdk"><code>flutter pub add neurya_sdk</code><em>Copy</em></button>
+            <ul class="tags"><li>BLE</li><li>Health sync</li><li>Device management</li><li>Calendar UI</li></ul>
+          </article>
+          <article class="pkg reveal" style="--i:1">
+            <header><h3>flutter_uvc_camera</h3><span>v0.2.0</span></header>
+            <p>USB Video Class camera support for Android — lets Flutter apps use external USB cameras via platform channels.</p>
+            <button class="cmd" type="button" data-cmd="flutter pub add flutter_uvc_camera"><code>flutter pub add flutter_uvc_camera</code><em>Copy</em></button>
+            <ul class="tags"><li>USB cameras</li><li>Platform channels</li><li>Android native</li></ul>
+          </article>
+          <article class="pkg reveal" style="--i:2">
+            <header><h3>benefit_pg_flutter</h3><span>v0.0.1</span></header>
+            <p>Benefit payment gateway plugin for Flutter — secure card payment processing for Bahrain's Benefit network.</p>
+            <button class="cmd" type="button" data-cmd="flutter pub add benefit_pg_flutter"><code>flutter pub add benefit_pg_flutter</code><em>Copy</em></button>
+            <ul class="tags"><li>Benefit network</li><li>Card payments</li><li>Bahrain</li></ul>
           </article>
         </div>
       </div>
@@ -227,7 +251,7 @@
                 <li>Restaurant tech: Chicket kiosk and POS, Lime POS Suite (including a Windows desktop app) and Norda Kitchen</li>
                 <li>Wafaa+ loyalty platform and Atherminds Ads, a four-app smart-TV signage ecosystem</li>
                 <li>Multi-app ecosystems: Safar Cab (rider and driver), Exodus (three-app trucking) and Hospivio (three-app hospital suite)</li>
-                <li>Hardware integrations (BLE, thermal printers, USB cameras) and two packages on pub.dev</li>
+                <li>Hardware integrations (BLE, thermal printers, USB cameras) and Flutter packages for them</li>
               </ul>
             </div>
           </li>
