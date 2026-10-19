@@ -185,9 +185,6 @@ h1 { font-size: clamp(2.25rem, 1.5rem + 3.4vw, 3.75rem); line-height: 1.05; font
   transform: translate(calc(-50% + var(--dx, 0cqw)), -50%) rotate(var(--r, 0deg)) scale(var(--s, 1));
 }
 .shots--phones.shots--slim img { --w: 26cqw; }
-.shots--phones.shots--duo img { --w: 34cqw; --s: 1; }
-.shots--phones.shots--duo img:nth-child(1) { --dx: calc(var(--w) * -0.56); --r: -2deg; z-index: 1; }
-.shots--phones.shots--duo img:nth-child(2) { --dx: calc(var(--w) * 0.56); --r: 2deg; z-index: 2; }
 .shots--phones img:nth-child(1) { --dx: calc(var(--w) * -0.84); --s: 0.92; --r: -3deg; z-index: 1; }
 .shots--phones img:nth-child(2) { --dx: 0cqw; z-index: 3; }
 .shots--phones img:nth-child(3) { --dx: calc(var(--w) * 0.84); --s: 0.92; --r: 3deg; z-index: 1; }
