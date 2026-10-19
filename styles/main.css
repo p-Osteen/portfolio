@@ -197,29 +197,6 @@ h1 { font-size: clamp(2.25rem, 1.5rem + 3.4vw, 3.75rem); line-height: 1.05; font
 .dots i { width: 6px; height: 6px; border-radius: 3px; background: var(--line-2); transition: width 0.3s var(--ease), background-color 0.3s; }
 .dots i.is-on { width: 20px; background: var(--text); }
 
-/* ---------- Archive ---------- */
-.filters { display: flex; flex-wrap: wrap; gap: 8px; margin: clamp(24px, 4vw, 40px) 0 clamp(16px, 3vw, 24px); }
-.chip { min-height: 36px; padding: 0 14px; border-radius: 999px; font-size: 0.875rem; color: var(--text-2); border: 1px solid var(--line-2); transition: transform 0.12s ease-out, background-color 0.2s, color 0.2s, border-color 0.2s; }
-.chip:active { transform: scale(0.97); }
-.chip[aria-pressed="true"] { background: var(--text); color: var(--bg); border-color: var(--text); font-weight: 500; }
-.chip sup { font-size: 0.7em; margin-left: 4px; opacity: 0.6; }
-@media (hover: hover) { .chip:hover:not([aria-pressed="true"]) { border-color: var(--text); color: var(--text); } }
-
-.rows { border-top: 1px solid var(--line); }
-.row { display: grid; grid-template-columns: 1fr; gap: 6px; padding: 18px 12px; margin-inline: -12px; border-bottom: 1px solid var(--line); border-radius: 12px; transition: background-color 0.2s; }
-.row[hidden] { display: none; }
-.row.is-entering { animation: rise 0.4s var(--ease) both; animation-delay: calc(var(--i, 0) * 25ms); }
-.row__t { font-size: 1.0625rem; }
-.row__t small { margin-left: 8px; font-size: 0.8125rem; font-weight: 400; color: var(--dim); }
-.row__d { color: var(--dim); font-size: 0.9375rem; line-height: 1.5; }
-.row__d span { display: block; margin-top: 6px; font-size: 0.8125rem; color: var(--text-2); opacity: 0.75; }
-.row__c { font-size: 0.8125rem; color: var(--dim); }
-@media (min-width: 860px) {
-  .row { grid-template-columns: minmax(160px, 0.8fr) minmax(0, 2fr) 96px; gap: 24px; align-items: baseline; }
-  .row__c { text-align: right; }
-}
-@media (hover: hover) { .row:hover { background: var(--surface); } }
-
 /* ---------- Stack ---------- */
 .stack { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px 24px; margin-top: clamp(24px, 4vw, 40px); padding-top: 28px; border-top: 1px solid var(--line); }
 .stack h3 { font-size: 0.875rem; font-weight: 500; color: var(--dim); margin-bottom: 10px; letter-spacing: 0; }
@@ -261,10 +238,10 @@ h1 { font-size: clamp(2.25rem, 1.5rem + 3.4vw, 3.75rem); line-height: 1.05; font
 /* ---------- Accessibility preferences ---------- */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .rise, .row.is-entering { animation-name: fade; animation-delay: 0s; }
+  .rise { animation-name: fade; animation-delay: 0s; }
   .reveal-ready .reveal { transform: none; transition: opacity 0.3s ease; transition-delay: 0s; }
   .nav__links { transform: none; }
-  .btn:active, .icon-btn:active, .chip:active, .cmd:active { transform: none; }
+  .btn:active, .icon-btn:active, .cmd:active { transform: none; }
 }
 @media (prefers-reduced-transparency: reduce) {
   .nav { background: var(--bg); backdrop-filter: none; -webkit-backdrop-filter: none; }

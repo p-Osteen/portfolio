@@ -6,8 +6,6 @@
 
   var $ = function (s, c) { return (c || document).querySelector(s); };
   var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); };
-  var pad = function (n) { return (n < 10 ? "0" : "") + n; };
-  var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
   var reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
   var scrollBehavior = function () { return reducedMotion.matches ? "auto" : "smooth"; };
 
@@ -80,47 +78,6 @@
         navigator.clipboard.writeText(cmd).then(done, function () { showToast("Press Ctrl+C to copy"); });
       } else { showToast("Press Ctrl+C to copy"); }
     });
-  });
-
-  /* ---------- Archive ---------- */
-  var rowsEl = $("#rows"), filtersEl = $("#filters");
-
-  function renderArchive() {
-    if (!window.PROJECTS) return;
-    rowsEl.innerHTML = window.PROJECTS.map(function (p) {
-      return '<li class="row" data-cat="' + p.cat + '">' +
-        '<h3 class="row__t">' + esc(p.name) + (p.meta ? '<small>' + esc(p.meta) + '</small>' : '') + '</h3>' +
-        '<p class="row__d">' + esc(p.desc) + '<span>' + p.tech.map(esc).join(" · ") + '</span></p>' +
-        '<span class="row__c">' + esc(window.CATEGORIES[p.cat]) + '</span></li>';
-    }).join("");
-
-    var counts = { all: window.PROJECTS.length };
-    window.PROJECTS.forEach(function (p) { counts[p.cat] = (counts[p.cat] || 0) + 1; });
-    filtersEl.innerHTML = ["all"].concat(Object.keys(window.CATEGORIES)).map(function (c) {
-      var label = c === "all" ? "All" : window.CATEGORIES[c];
-      return '<button class="chip" type="button" data-cat="' + c + '" aria-pressed="' + (c === "all") + '">' + label + '<sup>' + counts[c] + '</sup></button>';
-    }).join("");
-  }
-
-  function applyFilter(cat) {
-    $$(".chip", filtersEl).forEach(function (c) { c.setAttribute("aria-pressed", String(c.getAttribute("data-cat") === cat)); });
-    var n = 0;
-    $$(".row", rowsEl).forEach(function (r) {
-      var show = cat === "all" || r.getAttribute("data-cat") === cat;
-      r.hidden = !show;
-      r.classList.remove("is-entering");
-      if (show) {
-        r.style.setProperty("--i", Math.min(n++, 10));
-        void r.offsetWidth; // restart the entrance animation
-        r.classList.add("is-entering");
-      }
-    });
-  }
-
-  renderArchive();
-  filtersEl.addEventListener("click", function (e) {
-    var chip = e.target.closest(".chip");
-    if (chip) applyFilter(chip.getAttribute("data-cat"));
   });
 
   /* ---------- Project rail ---------- */
