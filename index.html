@@ -69,7 +69,7 @@
         </div>
         <div class="about__text reveal" style="--i:1">
           <p>I lead Flutter development at Diode Info Solutions, building cross-platform apps for clients across Bahrain, Morocco and beyond. My speciality is the multi-app ecosystem — suites of three or four interconnected apps that together run a whole business.</p>
-          <p>I also create Flutter packages — hardware printer drivers, payment gateway SDKs and on-device ML tools — some of them published on pub.dev.</p>
+          <p>I also create Flutter packages — thermal printer drivers, payment-terminal and gateway SDKs, and a USB camera plugin — some of them published on pub.dev.</p>
         </div>
       </div>
 
@@ -78,7 +78,7 @@
           <li class="reveal" style="--i:0"><h3>Enterprise scale</h3><p>Led mobile development for 7 multi-app ecosystems, each with 2–4 interconnected applications.</p></li>
           <li class="reveal" style="--i:1"><h3>Multi-country</h3><p>Apps serving users in Bahrain, Morocco and other markets, with full localisation.</p></li>
           <li class="reveal" style="--i:2"><h3>Hardware &amp; IoT</h3><p>BLE smartwatches, thermal printers, USB cameras and payment terminals integrated into Flutter.</p></li>
-          <li class="reveal" style="--i:3"><h3>Open source</h3><p>Six Flutter packages: printer drivers, payment SDKs and on-device ML.</p></li>
+          <li class="reveal" style="--i:3"><h3>Open source</h3><p>Six Flutter packages for printers, payment terminals, payment gateways and USB cameras.</p></li>
         </ul>
       </div>
     </section>
@@ -191,45 +191,45 @@
         <div class="reveal">
           <p class="label">Open source</p>
           <h2 id="packages-title">Flutter packages</h2>
-          <p class="lede">Tools I built for hardware, payments and on-device ML. Names link to pub.dev where published. Click a command to copy it.</p>
+          <p class="lede">Tools I built for payment terminals, gateways, printers and cameras. Names link to pub.dev where published.</p>
         </div>
 
         <div class="pkgs">
           <article class="pkg reveal" style="--i:0">
-            <header><h3><a href="https://pub.dev/packages/nyx_printer_v2" target="_blank" rel="noopener">nyx_printer_v2</a></h3><span>v1.2.2</span></header>
-            <p>Flutter plugin for Nyx printers (NB55, T2 Pro, T2 Plus) — print text, barcodes, QR codes and images via Android AIDL service binding.</p>
-            <button class="cmd" type="button" data-cmd="flutter pub add nyx_printer_v2"><code>flutter pub add nyx_printer_v2</code><em>Copy</em></button>
-            <ul class="tags"><li>Text, barcode, QR</li><li>PNG printing</li><li>Android 14+</li></ul>
+            <header><h3>afs_pos_payment</h3><span>v0.1.0</span></header>
+            <p>Logic-only package for AFS (Apex ECR) payment terminals in Bahrain. Handles the SOAP and XML plumbing for sales, enquiries and end-of-day settlement.</p>
+            <p class="pkg__note">Private package · not on pub.dev</p>
+            <ul class="tags"><li>POS terminal</li><li>Sale & enquiry</li><li>Settlement</li><li>Receipt text</li></ul>
           </article>
           <article class="pkg reveal" style="--i:1">
-            <header><h3>afs_gateway</h3><span>v1.0.0</span></header>
-            <p>AFS Benefit Payment Gateway SDK — AES-256-CBC encryption, automated 3DS2 authentication, JS bridge result interception and deep-link support.</p>
-            <button class="cmd" type="button" data-cmd="flutter pub add afs_gateway"><code>flutter pub add afs_gateway</code><em>Copy</em></button>
-            <ul class="tags"><li>AES-256-CBC</li><li>3DS2</li><li>JS bridge</li><li>Sandbox cards</li></ul>
+            <header><h3>icod_printer</h3><span>v0.1.0</span></header>
+            <p>SDK for ESC/POS thermal receipt printers over USB, Bluetooth, network and serial, with a layout builder and live paper and cover status.</p>
+            <p class="pkg__note">Private package · not on pub.dev</p>
+            <ul class="tags"><li>ESC/POS</li><li>USB · BT · TCP · Serial</li><li>Status monitoring</li><li>Kiosk-ready</li></ul>
           </article>
           <article class="pkg reveal" style="--i:2">
-            <header><h3><a href="https://pub.dev/packages/photo_analyzer" target="_blank" rel="noopener">photo_analyzer</a></h3><span>v0.2.4</span></header>
-            <p>ML-powered photo analysis — face detection, gender estimation and NSFW classification with TensorFlow Lite on-device inference.</p>
-            <button class="cmd" type="button" data-cmd="flutter pub add photo_analyzer"><code>flutter pub add photo_analyzer</code><em>Copy</em></button>
-            <ul class="tags"><li>Face detection</li><li>Gender estimation</li><li>NSFW classification</li></ul>
+            <header><h3><a href="https://pub.dev/packages/naps_flutter" target="_blank" rel="noopener">naps_flutter</a></h3><span>v2.1.1</span></header>
+            <p>SDK for NAPS SUNMI P2 payment terminals using the M2M TLV protocol over TCP/IP or serial, including confirm, cancel and daily totals.</p>
+            <button class="cmd" type="button" data-cmd="flutter pub add naps_flutter"><code>flutter pub add naps_flutter</code><em>Copy</em></button>
+            <ul class="tags"><li>NAPS</li><li>SUNMI P2</li><li>TCP/IP & serial</li><li>Morocco</li></ul>
           </article>
           <article class="pkg reveal" style="--i:0">
-            <header><h3>neurya_sdk</h3><span>v0.0.1</span></header>
-            <p>Plug-and-play SDK for E900-series smartwatches. Health tracking, device management and data sync over BLE.</p>
-            <button class="cmd" type="button" data-cmd="flutter pub add neurya_sdk"><code>flutter pub add neurya_sdk</code><em>Copy</em></button>
-            <ul class="tags"><li>BLE</li><li>Health sync</li><li>Device management</li><li>Calendar UI</li></ul>
+            <header><h3>afs_gateway</h3><span>v1.0.0</span></header>
+            <p>AFS Benefit payment gateway SDK for Flutter, using the hosted payment page inside an in-app web view.</p>
+            <p class="pkg__note">Private package · not on pub.dev</p>
+            <ul class="tags"><li>Hosted checkout</li><li>InAppWebView</li><li>Benefit</li><li>Bahrain</li></ul>
           </article>
           <article class="pkg reveal" style="--i:1">
             <header><h3>flutter_uvc_camera</h3><span>v0.2.0</span></header>
-            <p>USB Video Class camera support for Android — lets Flutter apps use external USB cameras via platform channels.</p>
-            <button class="cmd" type="button" data-cmd="flutter pub add flutter_uvc_camera"><code>flutter pub add flutter_uvc_camera</code><em>Copy</em></button>
-            <ul class="tags"><li>USB cameras</li><li>Platform channels</li><li>Android native</li></ul>
+            <p>Flutter plugin for USB Video Class cameras on Android, built on native libuvccamera. Streams NV21 frames that work with ML Kit.</p>
+            <p class="pkg__note">Private package · not on pub.dev</p>
+            <ul class="tags"><li>USB cameras</li><li>NV21 streaming</li><li>Android 5.0+</li><li>JNI / NDK</li></ul>
           </article>
           <article class="pkg reveal" style="--i:2">
-            <header><h3>benefit_pg_flutter</h3><span>v0.0.1</span></header>
-            <p>Benefit payment gateway plugin for Flutter — secure card payment processing for Bahrain's Benefit network.</p>
-            <button class="cmd" type="button" data-cmd="flutter pub add benefit_pg_flutter"><code>flutter pub add benefit_pg_flutter</code><em>Copy</em></button>
-            <ul class="tags"><li>Benefit network</li><li>Card payments</li><li>Bahrain</li></ul>
+            <header><h3><a href="https://pub.dev/packages/nyx_printer_v2" target="_blank" rel="noopener">nyx_printer_v2</a></h3><span>v1.2.2</span></header>
+            <p>Flutter plugin for Nyx printers (NB55, T2 Pro, T2 Plus): print text, barcodes, QR codes and images via Android AIDL service binding.</p>
+            <button class="cmd" type="button" data-cmd="flutter pub add nyx_printer_v2"><code>flutter pub add nyx_printer_v2</code><em>Copy</em></button>
+            <ul class="tags"><li>Text, barcode, QR</li><li>PNG printing</li><li>Android 14+</li></ul>
           </article>
         </div>
       </div>
